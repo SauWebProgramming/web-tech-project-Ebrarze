@@ -1,54 +1,73 @@
 /* style.css */
 
-/* --- GENEL AYARLAR --- */
+/* --- GENEL AYARLAR ve MİMARİ --- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f0f2f5; /* Hafif modern gri */
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #1f1f1f; /* Koyu tema */
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #main-nav a {
-    color: white;
+    color: #cccccc;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#main-nav a:hover {
+    color: #4CAF50; /* Yeşil vurgu */
 }
 
 main {
     padding: 20px;
+    max-width: 1400px; /* Merkezi konteyner */
+    margin: 0 auto; /* Sayfayı ortala */
 }
 
-/* --- FİLTRE VE ARAMA KONTROLLERİ --- */
+/* --- FİLTRE VE ARAMA KONTROLLERİ (FLEXBOX) --- */
 
 #filter-controls {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .controls-wrapper {
-    display: flex; /* Kontrol gruplarını yan yana dizer */
+    display: flex; /* ZORUNLU: CSS Flexbox kullanımı */
     gap: 15px;
-    flex-wrap: wrap; /* Mobil cihazda alt alta geçiş sağlar */
+    flex-wrap: wrap; 
+    align-items: center;
 }
 
 #search-input,
 #media-type-filter,
-#year-filter {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex-grow: 1; /* Alanda yayılmasını sağlar */
-    min-width: 150px;
+#year-filter,
+#rating-filter { /* Yeni eklenen puan filtresi eklendi */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex-grow: 1; 
+    min-width: 160px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: #4CAF50;
+    outline: none;
 }
 
 
@@ -56,8 +75,8 @@ main {
 
 .media-grid {
     display: grid; /* ZORUNLU: CSS Grid kullanımı */
-    gap: 20px;
-    /* Mobil cihazlar için varsayılan (tek sütun) */
+    gap: 25px;
+    /* Mobil: 1 sütun */
     grid-template-columns: 1fr; 
     margin-top: 20px;
 }
@@ -65,8 +84,8 @@ main {
 /* 768px'den sonra (Tablet/Masaüstü) */
 @media (min-width: 768px) {
     .media-grid {
-        /* Otomatik olarak 300px genişliğinde sütunlar oluşturur */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        /* Otomatik 3 sütun düzeni için minmax */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     }
 }
 
@@ -74,46 +93,62 @@ main {
 
 .media-card {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none; /* Border kaldırıldı, daha temiz box-shadow kullanılacak */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s;
-    cursor: pointer; /* Detay sayfası için tıklanabilirliği belirtir */
+    transition: all 0.3s ease-in-out; /* Daha yumuşak geçiş */
+    cursor: pointer; 
 }
 
 .media-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Daha belirgin kalkma efekti */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card-image {
-    height: 150px;
-    background-color: #f0f0f0;
-    background-size: cover;
-    background-position: center;
-    border-bottom: 1px solid #eee;
-}
-
+/* Kart İçeriği */
 .card-content {
     padding: 15px;
 }
 
+.card-content h3 {
+    color: #1f1f1f;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.category {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
 .rating {
-    font-weight: bold;
-    color: #ff9800;
+    font-weight: 700;
+    color: #ffc107; /* Altın sarısı */
     margin-bottom: 10px;
 }
 
+/* Favori Butonu */
 .add-favorite {
-    background-color: #28a745;
+    background-color: #4CAF50; /* Yeşil */
     color: white;
     border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
     transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .add-favorite:hover {
-    background-color: #218838;
+    background-color: #388e3c;
+}
+
+/* Kitaplar için özel stil (opsiyonel) */
+.kitap .card-author {
+    font-size: 0.9rem;
+    color: #333;
 }

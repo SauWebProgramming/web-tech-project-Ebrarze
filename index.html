@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Medya Arşivi: Film, Dizi & Kitap</h1>
+        <h1>Medya Arşivi: Film, Dizi, Kitap & Daha Fazlası</h1>
         <nav id="main-nav">
-            <a href="#home">Tüm Medyalar</a>
-            <a href="#favorites" id="favorites-link">Favorilerim</a> 
+            <a href="#home" class="nav-link" data-view="list">Tüm Medyalar</a>
+            <a href="#favorites" class="nav-link" data-view="favorites" id="favorites-link">Favorilerim</a> 
         </nav>
     </header>
 
@@ -21,18 +21,26 @@
             <h2>Arşiv Arama ve Filtreleme</h2>
             <div class="controls-wrapper">
                 
-                <input type="text" id="search-input" placeholder="Başlık veya Özet Ara...">
+                <input type="text" id="search-input" placeholder="Başlık, Özet veya Oyuncu Ara...">
 
                 <select id="media-type-filter">
                     <option value="Tümü">Tümü</option>
                     <option value="Film">Filmler</option>
                     <option value="Dizi">Diziler</option>
                     <option value="Kitap">Kitaplar</option>
+                    <option value="Dergi">Dergiler</option>
+                    <option value="Animasyon">Animasyonlar</option>
                 </select>
 
                 <select id="year-filter">
                     <option value="Tümü">Yıl (Tümü)</option>
                     </select>
+                
+                <select id="rating-filter">
+                    <option value="0">Puan (> 0.0)</option>
+                    <option value="8.0">Puan (> 8.0)</option>
+                    <option value="9.0">Puan (> 9.0)</option>
+                </select>
             </div>
         </section>
 

@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id": 1,
         "type": "Film",
@@ -13,27 +13,16 @@
     {
         "id": 2,
         "type": "Film",
-        "title": "Ayla",
-        "year": 2017,
-        "category": "Türk Filmi/Savaş Draması",
-        "rating": 8.7,
-        "summary": "Kore Savaşı sırasında Astsubay Süleyman ile küçük bir kızın gerçek hikayesi.",
-        "cast": ["İsmail Hacıoğlu", "Kim Seol"],
-        "duration": "125 dk"
+        "title": "Frankenstein",
+        "year": 1931,
+        "category": "Gotik/Korku",
+        "rating": 7.8,
+        "summary": "Bir bilim adamının canlandırdığı yaratığın trajik hikayesi.",
+        "cast": ["Boris Karloff", "Colin Clive"],
+        "duration": "70 dk"
     },
     {
         "id": 3,
-        "type": "Film",
-        "title": "Kış Uykusu",
-        "year": 2014,
-        "category": "Türk Filmi/Dram",
-        "rating": 8.1,
-        "summary": "Emekli bir oyuncu olan Aydın'ın, Kapadokya'daki otelinde kış boyunca yaşadığı yüzleşmeler.",
-        "cast": ["Haluk Bilginer", "Melisa Sözen"],
-        "duration": "196 dk"
-    },
-    {
-        "id": 4,
         "type": "Film",
         "title": "Upgrade",
         "year": 2018,
@@ -44,7 +33,7 @@
         "duration": "100 dk"
     },
     {
-        "id": 5,
+        "id": 4,
         "type": "Film",
         "title": "Oksijen",
         "year": 2021,
@@ -55,7 +44,7 @@
         "duration": "101 dk"
     },
     {
-        "id": 6,
+        "id": 5,
         "type": "Film",
         "title": "Yıldızlararası",
         "year": 2014,
@@ -66,7 +55,7 @@
         "duration": "169 dk"
     },
     {
-        "id": 7,
+        "id": 6,
         "type": "Film",
         "title": "Gladyatör",
         "year": 2000,
@@ -77,7 +66,7 @@
         "duration": "155 dk"
     },
     {
-        "id": 8,
+        "id": 7,
         "type": "Film",
         "title": "Yeşil Yol",
         "year": 1999,
@@ -88,7 +77,7 @@
         "duration": "189 dk"
     },
     {
-        "id": 9,
+        "id": 8,
         "type": "Film",
         "title": "Matrix",
         "year": 1999,
@@ -99,7 +88,7 @@
         "duration": "136 dk"
     },
     {
-        "id": 10,
+        "id": 9,
         "type": "Film",
         "title": "Geleceğe Dönüş",
         "year": 1985,
@@ -110,7 +99,7 @@
         "duration": "116 dk"
     },
     {
-        "id": 11,
+        "id": 10,
         "type": "Film",
         "title": "Başlangıç",
         "year": 2010,
@@ -121,7 +110,7 @@
         "duration": "148 dk"
     },
     {
-        "id": 12,
+        "id": 11,
         "type": "Film",
         "title": "Yüzüklerin Efendisi: İki Kule",
         "year": 2002,
@@ -132,7 +121,7 @@
         "duration": "179 dk"
     },
     {
-        "id": 13,
+        "id": 12,
         "type": "Film",
         "title": "Dövüş Kulübü",
         "year": 1999,
@@ -143,7 +132,7 @@
         "duration": "139 dk"
     },
     {
-        "id": 14,
+        "id": 13,
         "type": "Film",
         "title": "Godfather",
         "year": 1972,
@@ -154,7 +143,7 @@
         "duration": "175 dk"
     },
     {
-        "id": 15,
+        "id": 14,
         "type": "Film",
         "title": "Prestij",
         "year": 2006,
@@ -165,7 +154,7 @@
         "duration": "130 dk"
     },
     {
-        "id": 16,
+        "id": 15,
         "type": "Film",
         "title": "Forrest Gump",
         "year": 1994,
@@ -176,7 +165,7 @@
         "duration": "142 dk"
     },
     {
-        "id": 17,
+        "id": 16,
         "type": "Film",
         "title": "Terminatör 2",
         "year": 1991,
@@ -187,7 +176,7 @@
         "duration": "137 dk"
     },
     {
-        "id": 18,
+        "id": 17,
         "type": "Film",
         "title": "Canım Kardeşim",
         "year": 1973,
@@ -196,6 +185,17 @@
         "summary": "Fakir ve hayalperest ağabeyin, hasta kardeşinin son dileğini gerçekleştirme çabası.",
         "cast": ["Tarık Akan", "Halit Akçatepe"],
         "duration": "92 dk"
+    },
+    {
+        "id": 18,
+        "type": "Film",
+        "title": "Hayat Güzeldir",
+        "year": 1997,
+        "category": "Savaş/Komedi-Dram",
+        "rating": 8.6,
+        "summary": "Holokost sırasında oğluna savaşın bir oyun olduğunu göstermeye çalışan baba.",
+        "cast": ["Roberto Benigni", "Nicoletta Braschi"],
+        "duration": "116 dk"
     },
     {
         "id": 19,
@@ -275,8 +275,6 @@
         "duration": "157 dk"
     },
 
-
-   
     {
         "id": 26,
         "type": "Dizi",
@@ -723,8 +721,7 @@
         "publisher": "Çeşitli"
     },
     
-    
-    
+
     {
         "id": 63,
         "type": "Dergi",
@@ -846,8 +843,6 @@
         "page_count": 110
     },
     
-    
-   
     {
         "id": 73,
         "type": "Animasyon",
@@ -974,7 +969,6 @@
         "studio": "Pixar"
     },
     
-   
     {
         "id": 83,
         "type": "Kitap",

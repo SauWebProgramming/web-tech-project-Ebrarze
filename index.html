@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnteraktif Medya Kitaplığı (SPA)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Medya Arşivi: Film, Dizi & Kitap</h1>
+        <nav id="main-nav">
+            <a href="#home">Tüm Medyalar</a>
+            <a href="#favorites" id="favorites-link">Favorilerim</a> 
+        </nav>
+    </header>
+
+    <main id="app-container">
+        
+        <section id="filter-controls">
+            <h2>Arşiv Arama ve Filtreleme</h2>
+            <div class="controls-wrapper">
+                
+                <input type="text" id="search-input" placeholder="Başlık veya Özet Ara...">
+
+                <select id="media-type-filter">
+                    <option value="Tümü">Tümü</option>
+                    <option value="Film">Filmler</option>
+                    <option value="Dizi">Diziler</option>
+                    <option value="Kitap">Kitaplar</option>
+                </select>
+
+                <select id="year-filter">
+                    <option value="Tümü">Yıl (Tümü)</option>
+                    </select>
+            </div>
+        </section>
+
+        <section id="content-area">
+            <p>Medya verileri yükleniyor...</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Teknolojileri Ödevi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

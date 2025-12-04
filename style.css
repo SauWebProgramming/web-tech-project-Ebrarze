@@ -1,0 +1,119 @@
+/* style.css */
+
+/* --- GENEL AYARLAR --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* --- FİLTRE VE ARAMA KONTROLLERİ --- */
+
+#filter-controls {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.controls-wrapper {
+    display: flex; /* Kontrol gruplarını yan yana dizer */
+    gap: 15px;
+    flex-wrap: wrap; /* Mobil cihazda alt alta geçiş sağlar */
+}
+
+#search-input,
+#media-type-filter,
+#year-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1; /* Alanda yayılmasını sağlar */
+    min-width: 150px;
+}
+
+
+/* --- LİSTE GÖRÜNÜMÜ (CSS GRID / Duyarlılık) --- */
+
+.media-grid {
+    display: grid; /* ZORUNLU: CSS Grid kullanımı */
+    gap: 20px;
+    /* Mobil cihazlar için varsayılan (tek sütun) */
+    grid-template-columns: 1fr; 
+    margin-top: 20px;
+}
+
+/* 768px'den sonra (Tablet/Masaüstü) */
+@media (min-width: 768px) {
+    .media-grid {
+        /* Otomatik olarak 300px genişliğinde sütunlar oluşturur */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+}
+
+/* --- KART STİLLERİ --- */
+
+.media-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer; /* Detay sayfası için tıklanabilirliği belirtir */
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 150px;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #eee;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.add-favorite {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-favorite:hover {
+    background-color: #218838;
+}

@@ -1,5 +1,4 @@
 [
-    /* --- FİLMLER (20 Adet) --- */
     {
         "id": 1,
         "type": "Film",
@@ -14,16 +13,27 @@
     {
         "id": 2,
         "type": "Film",
-        "title": "Frankenstein",
-        "year": 1931,
-        "category": "Gotik/Korku",
-        "rating": 7.8,
-        "summary": "Bir bilim adamının canlandırdığı yaratığın trajik hikayesi.",
-        "cast": ["Boris Karloff", "Colin Clive"],
-        "duration": "70 dk"
+        "title": "Ayla",
+        "year": 2017,
+        "category": "Türk Filmi/Savaş Draması",
+        "rating": 8.7,
+        "summary": "Kore Savaşı sırasında Astsubay Süleyman ile küçük bir kızın gerçek hikayesi.",
+        "cast": ["İsmail Hacıoğlu", "Kim Seol"],
+        "duration": "125 dk"
     },
     {
         "id": 3,
+        "type": "Film",
+        "title": "Kış Uykusu",
+        "year": 2014,
+        "category": "Türk Filmi/Dram",
+        "rating": 8.1,
+        "summary": "Emekli bir oyuncu olan Aydın'ın, Kapadokya'daki otelinde kış boyunca yaşadığı yüzleşmeler.",
+        "cast": ["Haluk Bilginer", "Melisa Sözen"],
+        "duration": "196 dk"
+    },
+    {
+        "id": 4,
         "type": "Film",
         "title": "Upgrade",
         "year": 2018,
@@ -34,7 +44,7 @@
         "duration": "100 dk"
     },
     {
-        "id": 4,
+        "id": 5,
         "type": "Film",
         "title": "Oksijen",
         "year": 2021,
@@ -45,7 +55,7 @@
         "duration": "101 dk"
     },
     {
-        "id": 5,
+        "id": 6,
         "type": "Film",
         "title": "Yıldızlararası",
         "year": 2014,
@@ -56,7 +66,7 @@
         "duration": "169 dk"
     },
     {
-        "id": 6,
+        "id": 7,
         "type": "Film",
         "title": "Gladyatör",
         "year": 2000,
@@ -67,7 +77,7 @@
         "duration": "155 dk"
     },
     {
-        "id": 7,
+        "id": 8,
         "type": "Film",
         "title": "Yeşil Yol",
         "year": 1999,
@@ -78,7 +88,7 @@
         "duration": "189 dk"
     },
     {
-        "id": 8,
+        "id": 9,
         "type": "Film",
         "title": "Matrix",
         "year": 1999,
@@ -89,7 +99,7 @@
         "duration": "136 dk"
     },
     {
-        "id": 9,
+        "id": 10,
         "type": "Film",
         "title": "Geleceğe Dönüş",
         "year": 1985,
@@ -100,7 +110,7 @@
         "duration": "116 dk"
     },
     {
-        "id": 10,
+        "id": 11,
         "type": "Film",
         "title": "Başlangıç",
         "year": 2010,
@@ -111,7 +121,7 @@
         "duration": "148 dk"
     },
     {
-        "id": 11,
+        "id": 12,
         "type": "Film",
         "title": "Yüzüklerin Efendisi: İki Kule",
         "year": 2002,
@@ -122,7 +132,7 @@
         "duration": "179 dk"
     },
     {
-        "id": 12,
+        "id": 13,
         "type": "Film",
         "title": "Dövüş Kulübü",
         "year": 1999,
@@ -133,7 +143,7 @@
         "duration": "139 dk"
     },
     {
-        "id": 13,
+        "id": 14,
         "type": "Film",
         "title": "Godfather",
         "year": 1972,
@@ -144,7 +154,7 @@
         "duration": "175 dk"
     },
     {
-        "id": 14,
+        "id": 15,
         "type": "Film",
         "title": "Prestij",
         "year": 2006,
@@ -155,7 +165,7 @@
         "duration": "130 dk"
     },
     {
-        "id": 15,
+        "id": 16,
         "type": "Film",
         "title": "Forrest Gump",
         "year": 1994,
@@ -166,7 +176,7 @@
         "duration": "142 dk"
     },
     {
-        "id": 16,
+        "id": 17,
         "type": "Film",
         "title": "Terminatör 2",
         "year": 1991,
@@ -177,7 +187,7 @@
         "duration": "137 dk"
     },
     {
-        "id": 17,
+        "id": 18,
         "type": "Film",
         "title": "Canım Kardeşim",
         "year": 1973,
@@ -186,17 +196,6 @@
         "summary": "Fakir ve hayalperest ağabeyin, hasta kardeşinin son dileğini gerçekleştirme çabası.",
         "cast": ["Tarık Akan", "Halit Akçatepe"],
         "duration": "92 dk"
-    },
-    {
-        "id": 18,
-        "type": "Film",
-        "title": "Hayat Güzeldir",
-        "year": 1997,
-        "category": "Savaş/Komedi-Dram",
-        "rating": 8.6,
-        "summary": "Holokost sırasında oğluna savaşın bir oyun olduğunu göstermeye çalışan baba.",
-        "cast": ["Roberto Benigni", "Nicoletta Braschi"],
-        "duration": "116 dk"
     },
     {
         "id": 19,
@@ -220,10 +219,90 @@
         "cast": ["Song Kang-ho", "Choi Woo-shik"],
         "duration": "132 dk"
     },
-    
-    /* --- DİZİLER (15 Adet) --- */
     {
         "id": 21,
+        "type": "Film",
+        "title": "Piyanist",
+        "year": 2002,
+        "category": "Biyografi/Savaş",
+        "rating": 8.5,
+        "summary": "II. Dünya Savaşı sırasında Polonyalı bir piyanistin hayatta kalma mücadelesi.",
+        "cast": ["Adrien Brody", "Thomas Kretschmann"],
+        "duration": "150 dk"
+    },
+    {
+        "id": 22,
+        "type": "Film",
+        "title": "G.O.R.A.",
+        "year": 2004,
+        "category": "Türk Filmi/Komedi/Bilim Kurgu",
+        "rating": 8.0,
+        "summary": "Arif'in uzaylılar tarafından kaçırılması ve gezegende yaşadıkları.",
+        "cast": ["Cem Yılmaz", "Özkan Uğur"],
+        "duration": "127 dk"
+    },
+    {
+        "id": 23,
+        "type": "Film",
+        "title": "Muhsin Bey",
+        "year": 1987,
+        "category": "Türk Filmi/Dram",
+        "rating": 9.1,
+        "summary": "Müzik yapımcısı Muhsin Bey ve şarkıcı olmak isteyen Ali Nazik'in hikayesi.",
+        "cast": ["Şener Şen", "Uğur Yücel"],
+        "duration": "110 dk"
+    },
+    {
+        "id": 24,
+        "type": "Film",
+        "title": "Eşkıya",
+        "year": 1996,
+        "category": "Türk Filmi/Aksiyon/Suç",
+        "rating": 8.3,
+        "summary": "Otuz beş yıl sonra hapisten çıkan Baran'ın İstanbul'a gelişi ve intikam arayışı.",
+        "cast": ["Şener Şen", "Uğur Yücel"],
+        "duration": "121 dk"
+    },
+    {
+        "id": 25,
+        "type": "Film",
+        "title": "Bir Zamanlar Anadolu'da",
+        "year": 2011,
+        "category": "Türk Filmi/Sanat Filmi",
+        "rating": 7.8,
+        "summary": "Bir cinayet soruşturması için Anadolu bozkırlarında geçen uzun bir gece.",
+        "cast": ["Muhammet Uzuner", "Yılmaz Erdoğan"],
+        "duration": "157 dk"
+    },
+
+
+   
+    {
+        "id": 26,
+        "type": "Dizi",
+        "title": "Leyla ile Mecnun",
+        "year": 2011,
+        "category": "Türk Dizisi/Komedi/Fantastik",
+        "rating": 9.1,
+        "summary": "Aynı hastanede doğan Mecnun ve Leyla'nın absürt ve trajikomik hikayesi.",
+        "cast": ["Ali Atay", "Ezgi Asaroğlu"],
+        "seasons": 3,
+        "status": "Devam Ediyor"
+    },
+    {
+        "id": 27,
+        "type": "Dizi",
+        "title": "Ezel",
+        "year": 2009,
+        "category": "Türk Dizisi/Dram/Gerilim",
+        "rating": 8.5,
+        "summary": "İhanet sonrası intikam almak için Ezel kimliğini alan Ömer'in hikayesi.",
+        "cast": ["Kenan İmirzalıoğlu", "Cansu Dere"],
+        "seasons": 2,
+        "status": "Bitti"
+    },
+    {
+        "id": 28,
         "type": "Dizi",
         "title": "3 Cisim Problemi",
         "year": 2024,
@@ -235,7 +314,7 @@
         "status": "Devam Ediyor"
     },
     {
-        "id": 22,
+        "id": 29,
         "type": "Dizi",
         "title": "Stranger Things",
         "year": 2016,
@@ -247,7 +326,7 @@
         "status": "Devam Ediyor"
     },
     {
-        "id": 23,
+        "id": 30,
         "type": "Dizi",
         "title": "Anne with an E",
         "year": 2017,
@@ -259,7 +338,7 @@
         "status": "Bitti"
     },
     {
-        "id": 24,
+        "id": 31,
         "type": "Dizi",
         "title": "Sherlock",
         "year": 2010,
@@ -271,7 +350,7 @@
         "status": "Bitti"
     },
     {
-        "id": 25,
+        "id": 32,
         "type": "Dizi",
         "title": "Arcane",
         "year": 2021,
@@ -283,19 +362,7 @@
         "status": "Devam Ediyor"
     },
     {
-        "id": 26,
-        "type": "Dizi",
-        "title": "The Queen's Gambit",
-        "year": 2020,
-        "category": "Dram",
-        "rating": 8.6,
-        "summary": "Yetimhanede büyüyen bir satranç dehasının yükselişi.",
-        "cast": ["Anya Taylor-Joy", "Thomas Brodie-Sangster"],
-        "seasons": 1,
-        "status": "Bitti"
-    },
-    {
-        "id": 27,
+        "id": 33,
         "type": "Dizi",
         "title": "The Last of Us",
         "year": 2023,
@@ -307,7 +374,7 @@
         "status": "Devam Ediyor"
     },
     {
-        "id": 28,
+        "id": 34,
         "type": "Dizi",
         "title": "Breaking Bad",
         "year": 2008,
@@ -319,7 +386,7 @@
         "status": "Bitti"
     },
     {
-        "id": 29,
+        "id": 35,
         "type": "Dizi",
         "title": "Black Mirror",
         "year": 2011,
@@ -331,7 +398,7 @@
         "status": "Devam Ediyor"
     },
     {
-        "id": 30,
+        "id": 36,
         "type": "Dizi",
         "title": "Mindhunter",
         "year": 2017,
@@ -343,7 +410,7 @@
         "status": "Bitti"
     },
     {
-        "id": 31,
+        "id": 37,
         "type": "Dizi",
         "title": "Friends",
         "year": 1994,
@@ -355,7 +422,7 @@
         "status": "Bitti"
     },
     {
-        "id": 32,
+        "id": 38,
         "type": "Dizi",
         "title": "Chernobyl",
         "year": 2019,
@@ -367,7 +434,19 @@
         "status": "Bitti"
     },
     {
-        "id": 33,
+        "id": 39,
+        "type": "Dizi",
+        "title": "The Queen's Gambit",
+        "year": 2020,
+        "category": "Dram",
+        "rating": 8.6,
+        "summary": "Yetimhanede büyüyen bir satranç dehasının yükselişi.",
+        "cast": ["Anya Taylor-Joy", "Thomas Brodie-Sangster"],
+        "seasons": 1,
+        "status": "Bitti"
+    },
+    {
+        "id": 40,
         "type": "Dizi",
         "title": "Game of Thrones",
         "year": 2011,
@@ -379,33 +458,128 @@
         "status": "Bitti"
     },
     {
-        "id": 34,
+        "id": 41,
         "type": "Dizi",
-        "title": "Dexter",
-        "year": 2006,
-        "category": "Suç/Gerilim",
-        "rating": 8.7,
-        "summary": "Gündüz adli tıpçı, gece seri katil olan Dexter'ın hikayesi.",
-        "cast": ["Michael C. Hall", "Jennifer Carpenter"],
-        "seasons": 8,
-        "status": "Bitti"
-    },
-    {
-        "id": 35,
-        "type": "Dizi",
-        "title": "Peaky Blinders",
-        "year": 2013,
-        "category": "Tarihi/Suç",
-        "rating": 8.8,
-        "summary": "Birmingham'daki ünlü Peaky Blinders çetesinin yükselişi.",
-        "cast": ["Cillian Murphy", "Sam Neill"],
+        "title": "Sıfır Bir",
+        "year": 2016,
+        "category": "Türk Dizisi/Aksiyon/Suç",
+        "rating": 8.9,
+        "summary": "Adana'nın gettolarında geçen sert bir sokak hikayesi.",
+        "cast": ["Savaş Satış", "Cihangir Ceyhan"],
         "seasons": 6,
         "status": "Bitti"
     },
-
-    /* --- KİTAPLAR (15 Adet) --- */
     {
-        "id": 36,
+        "id": 42,
+        "type": "Dizi",
+        "title": "Masum",
+        "year": 2017,
+        "category": "Türk Dizisi/Gizem/Dram",
+        "rating": 8.7,
+        "summary": "Emekli komiser Cevdet'in ailesini çevreleyen karanlık sırlar.",
+        "cast": ["Haluk Bilginer", "Serkan Keskin"],
+        "seasons": 1,
+        "status": "Bitti"
+    },
+    {
+        "id": 43,
+        "type": "Dizi",
+        "title": "Fi",
+        "year": 2017,
+        "category": "Türk Dizisi/Psikolojik Gerilim",
+        "rating": 8.1,
+        "summary": "Ünlü bir psikiyatristin, genç bir balerine olan takıntılı aşkı.",
+        "cast": ["Ozan Güven", "Serenay Sarıkaya"],
+        "seasons": 3,
+        "status": "Bitti"
+    },
+    {
+        "id": 44,
+        "type": "Dizi",
+        "title": "Atiye",
+        "year": 2019,
+        "category": "Türk Dizisi/Fantastik/Gizem",
+        "rating": 7.1,
+        "summary": "Göbeklitepe'deki sembollerle kendi geçmişi arasında bağlantı kuran bir ressam.",
+        "cast": ["Beren Saat", "Mehmet Günsür"],
+        "seasons": 3,
+        "status": "Bitti"
+    },
+    {
+        "id": 45,
+        "type": "Dizi",
+        "title": "Kurtlar Vadisi",
+        "year": 2003,
+        "category": "Türk Dizisi/Aksiyon/Mafya",
+        "rating": 8.9,
+        "summary": "Polat Alemdar'ın yer altı dünyasına sızması ve mafya ile mücadelesi.",
+        "cast": ["Necati Şaşmaz", "Özgü Namal"],
+        "seasons": 4,
+        "status": "Bitti"
+    },
+
+    {
+        "id": 46,
+        "type": "Kitap",
+        "title": "Bilinmeyen Bir Kadının Mektubu",
+        "year": 1922,
+        "category": "Kısa Roman/Romantik",
+        "rating": 9.0,
+        "summary": "Bir yazarın, hayatı boyunca onu gizlice seven bir kadından aldığı mektup.",
+        "author": "Stefan Zweig",
+        "page_count": 80,
+        "publisher": "Insel Verlag"
+    },
+    {
+        "id": 47,
+        "type": "Kitap",
+        "title": "Cesur Yeni Dünya",
+        "year": 1932,
+        "category": "Distopya/Bilim Kurgu",
+        "rating": 8.9,
+        "summary": "Genetik mühendislikle kontrol edilen, duyguların bastırıldığı bir gelecek toplumu.",
+        "author": "Aldous Huxley",
+        "page_count": 311,
+        "publisher": "Chatto & Windus"
+    },
+    {
+        "id": 48,
+        "type": "Kitap",
+        "title": "Kinyas ve Kayra",
+        "year": 2000,
+        "category": "Türk Edebiyatı/Postmodern",
+        "rating": 8.4,
+        "summary": "Kayra'nın kayıp arkadaşı Kinyas'ın izini sürerken kendisiyle yüzleşmesi.",
+        "author": "Hakan Günday",
+        "page_count": 464,
+        "publisher": "Om Yayınevi"
+    },
+    {
+        "id": 49,
+        "type": "Kitap",
+        "title": "Bir İdam Mahkumunun Son Günü",
+        "year": 1829,
+        "category": "Dünya Klasiği/Felsefi",
+        "rating": 9.1,
+        "summary": "İdam cezasına çarptırılan bir mahkumun son 24 saatini anlatan monolog.",
+        "author": "Victor Hugo",
+        "page_count": 120,
+        "publisher": "Charles Gosselin"
+    },
+    {
+        "id": 50,
+        "type": "Kitap",
+        "title": "Bülbülü Öldürmek",
+        "year": 1960,
+        "category": "Sosyal Dram/Gençlik",
+        "rating": 9.0,
+        "summary": "Irkçılığın hüküm sürdüğü Alabama'da avukat olan Atticus Finch'in adalet arayışı.",
+        "author": "Harper Lee",
+        "page_count": 320,
+        "publisher": "J. B. Lippincott & Co."
+    },
+    {
+        "id": 51,
         "type": "Kitap",
         "title": "İnce Memed (1. Cilt)",
         "year": 1955,
@@ -417,7 +591,7 @@
         "publisher": "Toros Yayınları"
     },
     {
-        "id": 37,
+        "id": 52,
         "type": "Kitap",
         "title": "Tutunamayanlar",
         "year": 1971,
@@ -429,7 +603,7 @@
         "publisher": "Sinan Yayınları"
     },
     {
-        "id": 38,
+        "id": 53,
         "type": "Kitap",
         "title": "Yeraltından Notlar",
         "year": 1864,
@@ -441,7 +615,7 @@
         "publisher": "Epoch"
     },
     {
-        "id": 39,
+        "id": 54,
         "type": "Kitap",
         "title": "Gurur ve Önyargı",
         "year": 1813,
@@ -453,7 +627,7 @@
         "publisher": "T. Egerton"
     },
     {
-        "id": 40,
+        "id": 55,
         "type": "Kitap",
         "title": "Sefiller",
         "year": 1862,
@@ -465,7 +639,7 @@
         "publisher": "A. Lacroix"
     },
     {
-        "id": 41,
+        "id": 56,
         "type": "Kitap",
         "title": "1984",
         "year": 1949,
@@ -477,7 +651,7 @@
         "publisher": "Secker & Warburg"
     },
     {
-        "id": 42,
+        "id": 57,
         "type": "Kitap",
         "title": "Kürk Mantolu Madonna",
         "year": 1943,
@@ -489,7 +663,7 @@
         "publisher": "Remzi Kitabevi"
     },
     {
-        "id": 43,
+        "id": 58,
         "type": "Kitap",
         "title": "Simyacı",
         "year": 1988,
@@ -501,19 +675,7 @@
         "publisher": "HarperOne"
     },
     {
-        "id": 44,
-        "type": "Kitap",
-        "title": "Uçurtma Avcısı",
-        "year": 2003,
-        "category": "Dram",
-        "rating": 8.9,
-        "summary": "Afganistan'da geçen, iki çocuğun karmaşık dostluk ve ihanet hikayesi.",
-        "author": "Khaled Hosseini",
-        "page_count": 416,
-        "publisher": "Riverhead Books"
-    },
-    {
-        "id": 45,
+        "id": 59,
         "type": "Kitap",
         "title": "Dune",
         "year": 1965,
@@ -525,7 +687,296 @@
         "publisher": "Chilton Books"
     },
     {
-        "id": 46,
+        "id": 60,
+        "type": "Kitap",
+        "title": "Satranç",
+        "year": 1942,
+        "category": "Kısa Roman/Dram",
+        "rating": 9.1,
+        "summary": "Bir gemi yolculuğunda satranç şampiyonu ile gizemli bir yabancının karşılaşması.",
+        "author": "Stefan Zweig",
+        "page_count": 80,
+        "publisher": "Bermann-Fischer"
+    },
+    {
+        "id": 61,
+        "type": "Kitap",
+        "title": "Don Kişot",
+        "year": 1605,
+        "category": "Macera/Klasik",
+        "rating": 9.3,
+        "summary": "Şövalye hikayeleri okuyarak aklını yitiren Don Kişot'un maceraları.",
+        "author": "Miguel de Cervantes",
+        "page_count": 863,
+        "publisher": "Francisco de Robles"
+    },
+    {
+        "id": 62,
+        "type": "Kitap",
+        "title": "Yüzbaşının Kızı",
+        "year": 1836,
+        "category": "Rus Edebiyatı/Tarihi",
+        "rating": 8.9,
+        "summary": "Pugaçev ayaklanması sırasında genç bir subayın yaşadıkları.",
+        "author": "Aleksandr Puşkin",
+        "page_count": 220,
+        "publisher": "Çeşitli"
+    },
+    
+    
+    
+    {
+        "id": 63,
+        "type": "Dergi",
+        "title": "National Geographic",
+        "year": 2024,
+        "category": "Bilim/Doğa",
+        "rating": 9.5,
+        "summary": "Dünya üzerindeki coğrafi, doğal ve kültürel olayları belgeleyen aylık yayın.",
+        "publisher": "NGS",
+        "issue": "Mart",
+        "page_count": 150
+    },
+    {
+        "id": 64,
+        "type": "Dergi",
+        "title": "Wired",
+        "year": 2024,
+        "category": "Teknoloji/İnovasyon",
+        "rating": 8.8,
+        "summary": "Teknoloji ve kültürün geleceğini keşfeden yayın.",
+        "publisher": "Condé Nast",
+        "issue": "Nisan",
+        "page_count": 130
+    },
+    {
+        "id": 65,
+        "type": "Dergi",
+        "title": "Bilim ve Teknik",
+        "year": 2024,
+        "category": "Türk Bilim Yayını",
+        "rating": 9.2,
+        "summary": "TÜBİTAK tarafından yayınlanan aylık popüler bilim dergisi.",
+        "publisher": "TÜBİTAK",
+        "issue": "Mayıs",
+        "page_count": 100
+    },
+    {
+        "id": 66,
+        "type": "Dergi",
+        "title": "Leman",
+        "year": 2024,
+        "category": "Mizah",
+        "rating": 8.5,
+        "summary": "Türkiye'nin köklü ve muhalif mizah dergisi.",
+        "publisher": "Leman Yayıncılık",
+        "issue": "Haftalık",
+        "page_count": 32
+    },
+    {
+        "id": 67,
+        "type": "Dergi",
+        "title": "Focus",
+        "year": 2023,
+        "category": "Genel Kültür",
+        "rating": 8.1,
+        "summary": "Tarih, bilim ve genel kültür konularını işleyen aylık dergi.",
+        "publisher": "Focus",
+        "issue": "Ocak",
+        "page_count": 120
+    },
+    {
+        "id": 68,
+        "type": "Dergi",
+        "title": "Vogue",
+        "year": 2024,
+        "category": "Moda/Yaşam Tarzı",
+        "rating": 7.5,
+        "summary": "Dünyanın önde gelen moda, sanat ve yaşam tarzı dergisi.",
+        "publisher": "Condé Nast",
+        "issue": "Şubat",
+        "page_count": 200
+    },
+    {
+        "id": 69,
+        "type": "Dergi",
+        "title": "PC Magazine",
+        "year": 2023,
+        "category": "Donanım/Yazılım",
+        "rating": 8.0,
+        "summary": "Kişisel bilgisayarlar, donanım ve yazılım incelemeleri.",
+        "publisher": "Ziff Davis",
+        "issue": "Aralık",
+        "page_count": 80
+    },
+    {
+        "id": 70,
+        "type": "Dergi",
+        "title": "Atlas",
+        "year": 2024,
+        "category": "Seyahat/Coğrafya",
+        "rating": 9.3,
+        "summary": "Türkiye ve dünya coğrafyasından keşif hikayeleri.",
+        "publisher": "Atlas",
+        "issue": "Mart",
+        "page_count": 140
+    },
+    {
+        "id": 71,
+        "type": "Dergi",
+        "title": "New Yorker",
+        "year": 2024,
+        "category": "Haber/Edebiyat",
+        "rating": 9.6,
+        "summary": "Haber, eleştiri, deneme, kurgu ve karikatürler içeren haftalık Amerikan yayını.",
+        "publisher": "Condé Nast",
+        "issue": "Haftalık",
+        "page_count": 60
+    },
+    {
+        "id": 72,
+        "type": "Dergi",
+        "title": "OT Dergi",
+        "year": 2024,
+        "category": "Edebiyat/Kültür",
+        "rating": 8.8,
+        "summary": "Aylık edebiyat, kültür ve mizah dergisi.",
+        "publisher": "OT",
+        "issue": "Nisan",
+        "page_count": 110
+    },
+    
+    
+   
+    {
+        "id": 73,
+        "type": "Animasyon",
+        "title": "Spirited Away",
+        "year": 2001,
+        "category": "Japon/Fantastik",
+        "rating": 8.6,
+        "summary": "10 yaşındaki Chihiro'nun ruhlar dünyasında ailesini kurtarma macerası.",
+        "cast": ["Miyu Irino", "Rumi Hiiragi"],
+        "duration": "125 dk",
+        "studio": "Studio Ghibli"
+    },
+    {
+        "id": 74,
+        "type": "Animasyon",
+        "title": "Rick and Morty",
+        "year": 2013,
+        "category": "Yetişkin/Bilim Kurgu",
+        "rating": 9.1,
+        "summary": "Deli bilim adamı Rick ve torunu Morty'nin boyutlar arası maceraları.",
+        "cast": ["Justin Roiland", "Chris Parnell"],
+        "seasons": 7,
+        "status": "Devam Ediyor",
+        "studio": "Adult Swim"
+    },
+    {
+        "id": 75,
+        "type": "Animasyon",
+        "title": "Avatar: The Last Airbender",
+        "year": 2005,
+        "category": "Fantastik/Macera",
+        "rating": 9.3,
+        "summary": "Aang'ın Dört Ulusu birleştirmek için verdiği mücadele.",
+        "cast": ["Zach Tyler Eisen", "Mae Whitman"],
+        "seasons": 3,
+        "status": "Bitti",
+        "studio": "Nickelodeon"
+    },
+    {
+        "id": 76,
+        "type": "Animasyon",
+        "title": "Toy Story",
+        "year": 1995,
+        "category": "Çocuk/Macera",
+        "rating": 8.3,
+        "summary": "Oyuncakların gizli hayatlarını ve Buzz Lightyear ile Woody'nin dostluğunu anlatan film.",
+        "cast": ["Tom Hanks", "Tim Allen"],
+        "duration": "81 dk",
+        "studio": "Pixar"
+    },
+    {
+        "id": 77,
+        "type": "Animasyon",
+        "title": "Coco",
+        "year": 2017,
+        "category": "Müzikal/Aile",
+        "rating": 8.4,
+        "summary": "Miguel'in yanlışlıkla Ölüler Diyarı'na gitmesi ve ailesinin sırrını çözmesi.",
+        "cast": ["Anthony Gonzalez", "Gael García Bernal"],
+        "duration": "105 dk",
+        "studio": "Pixar"
+    },
+    {
+        "id": 78,
+        "type": "Animasyon",
+        "title": "Death Note",
+        "year": 2006,
+        "category": "Japon/Gizem/Gerilim",
+        "rating": 9.0,
+        "summary": "Ölüm Defteri'ni bulan lise öğrencisi Light Yagami'nin hikayesi.",
+        "cast": ["Mamoru Miyano", "Kappei Yamaguchi"],
+        "seasons": 1,
+        "status": "Bitti",
+        "studio": "Madhouse"
+    },
+    {
+        "id": 79,
+        "type": "Animasyon",
+        "title": "BoJack Horseman",
+        "year": 2014,
+        "category": "Yetişkin/Komedi-Dram",
+        "rating": 8.8,
+        "summary": "Eski bir sitcom yıldızının Hollywood'daki bunalımlı hayatı.",
+        "cast": ["Will Arnett", "Amy Sedaris"],
+        "seasons": 6,
+        "status": "Bitti",
+        "studio": "Netflix"
+    },
+    {
+        "id": 80,
+        "type": "Animasyon",
+        "title": "Kayıp Balık Nemo",
+        "year": 2003,
+        "category": "Çocuk/Macera",
+        "rating": 8.2,
+        "summary": "Oğlu Nemo'yu bulmak için okyanusları aşan palyaço balığı Marlin'in hikayesi.",
+        "cast": ["Albert Brooks", "Ellen DeGeneres"],
+        "duration": "100 dk",
+        "studio": "Pixar"
+    },
+    {
+        "id": 81,
+        "type": "Animasyon",
+        "title": "Arcane (Dizi)",
+        "year": 2021,
+        "category": "Fantastik/Aksiyon",
+        "rating": 9.0,
+        "summary": "Piltover ve Zaun şehirleri arasındaki çatışmanın kökenleri.",
+        "cast": ["Ella Purnell", "Hailee Steinfeld"],
+        "seasons": 1,
+        "status": "Devam Ediyor",
+        "studio": "Riot Games"
+    },
+    {
+        "id": 82,
+        "type": "Animasyon",
+        "title": "Wall-E",
+        "year": 2008,
+        "category": "Bilim Kurgu/Romantik",
+        "rating": 8.4,
+        "summary": "Yalnız bir çöp robotunun Dünya'yı kurtarma hikayesi.",
+        "cast": ["Ben Burtt", "Elissa Knight"],
+        "duration": "98 dk",
+        "studio": "Pixar"
+    },
+    
+   
+    {
+        "id": 83,
         "type": "Kitap",
         "title": "Küçük Prens",
         "year": 1943,
@@ -537,7 +988,7 @@
         "publisher": "Reynal & Hitchcock"
     },
     {
-        "id": 47,
+        "id": 84,
         "type": "Kitap",
         "title": "Yabancı",
         "year": 1942,
@@ -549,7 +1000,7 @@
         "publisher": "Gallimard"
     },
     {
-        "id": 48,
+        "id": 85,
         "type": "Kitap",
         "title": "Suç ve Ceza",
         "year": 1866,
@@ -561,7 +1012,7 @@
         "publisher": "The Russian Messenger"
     },
     {
-        "id": 49,
+        "id": 86,
         "type": "Kitap",
         "title": "Anna Karenina",
         "year": 1877,
@@ -573,7 +1024,7 @@
         "publisher": "The Russian Messenger"
     },
     {
-        "id": 50,
+        "id": 87,
         "type": "Kitap",
         "title": "Fahrenheit 451",
         "year": 1953,
@@ -583,5 +1034,161 @@
         "author": "Ray Bradbury",
         "page_count": 256,
         "publisher": "Ballantine Books"
+    },
+    {
+        "id": 88,
+        "type": "Kitap",
+        "title": "Bilinmeyen Bir Kadının Mektubu",
+        "year": 1922,
+        "category": "Kısa Roman/Romantik",
+        "rating": 9.0,
+        "summary": "Bir yazarın, hayatı boyunca onu gizlice seven bir kadından aldığı mektup.",
+        "author": "Stefan Zweig",
+        "page_count": 80,
+        "publisher": "Insel Verlag"
+    },
+    {
+        "id": 89,
+        "type": "Kitap",
+        "title": "Cesur Yeni Dünya",
+        "year": 1932,
+        "category": "Distopya/Bilim Kurgu",
+        "rating": 8.9,
+        "summary": "Genetik mühendislikle kontrol edilen, duyguların bastırıldığı bir gelecek toplumu.",
+        "author": "Aldous Huxley",
+        "page_count": 311,
+        "publisher": "Chatto & Windus"
+    },
+    {
+        "id": 90,
+        "type": "Kitap",
+        "title": "Kinyas ve Kayra",
+        "year": 2000,
+        "category": "Türk Edebiyatı/Postmodern",
+        "rating": 8.4,
+        "summary": "Kayra'nın kayıp arkadaşı Kinyas'ın izini sürerken kendisiyle yüzleşmesi.",
+        "author": "Hakan Günday",
+        "page_count": 464,
+        "publisher": "Om Yayınevi"
+    },
+    {
+        "id": 91,
+        "type": "Kitap",
+        "title": "Bir İdam Mahkumunun Son Günü",
+        "year": 1829,
+        "category": "Dünya Klasiği/Felsefi",
+        "rating": 9.1,
+        "summary": "İdam cezasına çarptırılan bir mahkumun son 24 saatini anlatan monolog.",
+        "author": "Victor Hugo",
+        "page_count": 120,
+        "publisher": "Charles Gosselin"
+    },
+    {
+        "id": 92,
+        "type": "Kitap",
+        "title": "Bülbülü Öldürmek",
+        "year": 1960,
+        "category": "Sosyal Dram/Gençlik",
+        "rating": 9.0,
+        "summary": "Irkçılığın hüküm sürdüğü Alabama'da avukat olan Atticus Finch'in adalet arayışı.",
+        "author": "Harper Lee",
+        "page_count": 320,
+        "publisher": "J. B. Lippincott & Co."
+    },
+    {
+        "id": 93,
+        "type": "Kitap",
+        "title": "İnce Memed (1. Cilt)",
+        "year": 1955,
+        "category": "Türk Klasiği/Roman",
+        "rating": 9.2,
+        "summary": "Çukurova'daki eşitsizlik ve ağalık sistemine karşı çıkan bir kahramanın hikayesi.",
+        "author": "Yaşar Kemal",
+        "page_count": 395,
+        "publisher": "Toros Yayınları"
+    },
+    {
+        "id": 94,
+        "type": "Kitap",
+        "title": "Tutunamayanlar",
+        "year": 1971,
+        "category": "Türk Klasiği/Modern",
+        "rating": 9.5,
+        "summary": "Turgut Özben'in intihar eden arkadaşı Selim Işık'ın izini sürerken kendi varoluşunu sorgulaması.",
+        "author": "Oğuz Atay",
+        "page_count": 724,
+        "publisher": "Sinan Yayınları"
+    },
+    {
+        "id": 95,
+        "type": "Kitap",
+        "title": "Yeraltından Notlar",
+        "year": 1864,
+        "category": "Dünya Klasiği/Felsefi",
+        "rating": 9.0,
+        "summary": "Toplumdan soyutlanmış, bilinçli ve yoksul bir adamın monologları.",
+        "author": "Fyodor Dostoyevski",
+        "page_count": 176,
+        "publisher": "Epoch"
+    },
+    {
+        "id": 96,
+        "type": "Kitap",
+        "title": "Gurur ve Önyargı",
+        "year": 1813,
+        "category": "Dünya Klasiği/Romantik",
+        "rating": 9.1,
+        "summary": "Elizabeth Bennet ve Bay Darcy'nin yanlış anlamalarla dolu aşk hikayesi.",
+        "author": "Jane Austen",
+        "page_count": 400,
+        "publisher": "T. Egerton"
+    },
+    {
+        "id": 97,
+        "type": "Kitap",
+        "title": "Sefiller",
+        "year": 1862,
+        "category": "Tarihi Roman",
+        "rating": 9.4,
+        "summary": "Fransız ihtilali döneminde Jean Valjean'ın adalet arayışı.",
+        "author": "Victor Hugo",
+        "page_count": 1400,
+        "publisher": "A. Lacroix"
+    },
+    {
+        "id": 98,
+        "type": "Kitap",
+        "title": "1984",
+        "year": 1949,
+        "category": "Distopya/Roman",
+        "rating": 9.2,
+        "summary": "Totaliter bir rejim altında yaşayan Winston Smith'in hikayesi.",
+        "author": "George Orwell",
+        "page_count": 328,
+        "publisher": "Secker & Warburg"
+    },
+    {
+        "id": 99,
+        "type": "Kitap",
+        "title": "Kürk Mantolu Madonna",
+        "year": 1943,
+        "category": "Türk Klasiği/Roman",
+        "rating": 9.1,
+        "summary": "Raif Efendi'nin gizemli kadının tablosuyla karşılaşması.",
+        "author": "Sabahattin Ali",
+        "page_count": 177,
+        "publisher": "Remzi Kitabevi"
+    },
+    {
+        "id": 100,
+        "type": "Kitap",
+        "title": "Simyacı",
+        "year": 1988,
+        "category": "Felsefe/Roman",
+        "rating": 8.2,
+        "summary": "Endülüslü çoban Santiago'nun kendini keşfi.",
+        "author": "Paulo Coelho",
+        "page_count": 197,
+        "publisher": "HarperOne"
     }
 ]

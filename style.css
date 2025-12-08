@@ -152,3 +152,45 @@ main {
     font-size: 0.9rem;
     color: #333;
 }
+/* --- KART STİLLERİ (Görsel Bölüm) --- */
+
+.card-image {
+    /* Resim, CSS Grid'de kartın üst bölümünü kaplayacak */
+    height: 200px; /* Posterler için yeterli yükseklik */
+    background-color: #f0f0f0; 
+    
+    /* JSON'dan gelen görseli yerleştirme ayarları */
+    background-size: cover;       /* Görselin kartı doldurmasını sağlar */
+    background-position: center;  /* Görseli ortalar */
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
+}
+/* style.css dosyanızdaki ilgili bölümler */
+
+/* --- LİSTE GÖRÜNÜMÜ (CSS GRID / Duyarlılık) --- */
+.media-grid {
+    display: grid; 
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+}
+
+/* --- KART STİLLERİ --- */
+.media-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Görselin kart sınırlarını aşmasını engeller */
+    /* ... (Diğer stiller) */
+}
+
+.card-image {
+    /* Resim, CSS Grid'de kartın üst bölümünü kaplayacak */
+    height: 250px; /* Posterler için yükseklik */
+    background-color: #f0f0f0; 
+    
+    /* JSON'dan gelen görseli yerleştirme ayarları */
+    background-size: cover;       /* Görselin kartı doldurmasını sağlar */
+    background-position: center;  /* Görseli ortalar */
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
+}

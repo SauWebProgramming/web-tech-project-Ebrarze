@@ -169,6 +169,49 @@ function attachFilterListeners() {
     // document.querySelectorAll('.add-favorite').forEach(button => { /* ... */ });
 }
 
+// script.js dosyanızdaki createMediaCard fonksiyonu
 
-// --- UYGULAMAYI BAŞLATMA ---
-fetchMedia(); // Uygulama başladığında veriyi çek
+function createMediaCard(item) {
+    const card = document.createElement('article'); 
+    card.classList.add('media-card', item.type.toLowerCase().replace(' ', '-'));
+    card.dataset.id = item.id; 
+
+    // Favori yönetimi için eklenen kısım (bir sonraki adım)
+    const favorites = getFavorites();
+    const isFavorite = favorites.includes(item.id); 
+
+    let details = '';
+    // Kitaplar için Yazar, Diğerleri için Oyuncu bilgisini göster (vb. detaylar)
+    if (item.type === 'Kitap') {
+        details = `<p class="card-author">Yazar: <strong>${item.author}</strong></p>`;
+    } else if (item.cast && item.cast.length > 0) {
+        details = `<p class="card-cast">Oyuncular: ${item.cast.slice(0, 2).join(', ')}...</p>`;
+    }
+    
+    // image_url alanını kullanma
+    const imageUrl = item.image_url || 'https://via.placeholder.com/200x300?text=Poster+Yok'; // Eğer görsel yoksa varsayılan görsel göster
+    
+    card.innerHTML = `
+        <div 
+             class="card-image" 
+             style="background-image: url('${imageUrl}');">
+        </div>
+
+        <div class="card-content">
+            <h3>${item.title} (${item.year})</h3>
+            <p class="category">Tür: ${item.type} / ${item.category}</p>
+            <p class="rating">${item.rating} ⭐</p>
+            ${details}
+            
+            <button class="add-favorite" data-id="${item.id}">
+                ${isFavorite ? '🗑️ Favoriden Çıkar' : '⭐️ Favorilere Ekle'}
+            </button>
+        </div>
+    `;
+    
+    if (isFavorite) {
+        card.classList.add('is-favorite'); 
+    }
+    
+    return card;
+}

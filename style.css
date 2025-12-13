@@ -1,196 +1,270 @@
-/* style.css */
+/* ==================================================
+   GENEL AYARLAR
+================================================== */
 
-/* --- GENEL AYARLAR ve MİMARİ --- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f0f2f5; /* Hafif modern gri */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
     line-height: 1.6;
 }
 
+/* ==================================================
+   HEADER & NAVBAR
+================================================== */
+
 header {
-    background-color: #1f1f1f; /* Koyu tema */
-    color: white;
-    padding: 20px;
+    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    color: #fff;
+    padding: 25px 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    /* Renkli gradient yazı */
+    background: linear-gradient(
+        90deg,
+        #4CAF50,
+        #00c6ff,
+        #ffb300
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Hafif animasyon */
+    animation: titleGlow 6s ease-in-out infinite;
+}
+@keyframes titleGlow {
+    0% {
+        filter: drop-shadow(0 0 2px rgba(76, 175, 80, 0.4));
+    }
+    50% {
+        filter: drop-shadow(0 0 6px rgba(0, 198, 255, 0.6));
+    }
+    100% {
+        filter: drop-shadow(0 0 2px rgba(255, 179, 0, 0.4));
+    }
+}
+#main-nav {
+    margin-top: 10px;
 }
 
 #main-nav a {
-    color: #cccccc;
-    margin: 0 15px;
+    color: #ccc;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 #main-nav a:hover {
-    color: #4CAF50; /* Yeşil vurgu */
+    color: #4CAF50;
 }
+
+/* ==================================================
+   MAIN LAYOUT
+================================================== */
 
 main {
-    padding: 20px;
-    max-width: 1400px; /* Merkezi konteyner */
-    margin: 0 auto; /* Sayfayı ortala */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
 }
 
-/* --- FİLTRE VE ARAMA KONTROLLERİ (FLEXBOX) --- */
+/* ==================================================
+   FİLTRE & ARAMA (FLEXBOX)
+================================================== */
 
 #filter-controls {
-    background-color: white;
+    background-color: #ffffff;
     padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+#filter-controls h2 {
+    margin-bottom: 20px;
+    color: #1f1f1f;
 }
 
 .controls-wrapper {
-    display: flex; /* ZORUNLU: CSS Flexbox kullanımı */
+    display: flex;
     gap: 15px;
-    flex-wrap: wrap; 
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-#search-input,
-#media-type-filter,
-#year-filter,
-#rating-filter { /* Yeni eklenen puan filtresi eklendi */
-    padding: 12px 15px;
+.controls-wrapper input,
+.controls-wrapper select {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px 14px;
+    border-radius: 8px;
     border: 1px solid #ddd;
     border-radius: 6px;
     flex-grow: 1; 
     min-width: 160px;
     font-size: 1rem;
-    transition: border-color 0.3s;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-#search-input:focus {
-    border-color: #4CAF50;
+.controls-wrapper input:focus,
+.controls-wrapper select:focus {
     outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
 }
 
-
-/* --- LİSTE GÖRÜNÜMÜ (CSS GRID / Duyarlılık) --- */
+/* ==================================================
+   MEDYA GRID (CSS GRID)
+================================================== */
 
 .media-grid {
-    display: grid; /* ZORUNLU: CSS Grid kullanımı */
-    gap: 25px;
-    /* Mobil: 1 sütun */
-    grid-template-columns: 1fr; 
-    margin-top: 20px;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* 768px'den sonra (Tablet/Masaüstü) */
-@media (min-width: 768px) {
-    .media-grid {
-        /* Otomatik 3 sütun düzeni için minmax */
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    }
-}
-
-/* --- KART STİLLERİ --- */
+/* ==================================================
+   MEDYA KARTLARI
+================================================== */
 
 .media-card {
-    background-color: white;
-    border: none; /* Border kaldırıldı, daha temiz box-shadow kullanılacak */
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 14px;
     overflow: hidden;
-    transition: all 0.3s ease-in-out; /* Daha yumuşak geçiş */
-    cursor: pointer; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .media-card:hover {
-    transform: translateY(-8px); /* Daha belirgin kalkma efekti */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }
 
-/* Kart İçeriği */
+/* ==================================================
+   KART GÖRSELİ
+================================================== */
+
+.card-image {
+    height: 260px;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ==================================================
+   KART İÇERİĞİ
+================================================== */
+
 .card-content {
-    padding: 15px;
+    padding: 18px;
 }
 
 .card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
     color: #1f1f1f;
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
 .category {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 6px;
 }
 
 .rating {
     font-weight: 700;
-    color: #ffc107; /* Altın sarısı */
+    color: #ffb300;
     margin-bottom: 10px;
 }
 
-/* Favori Butonu */
-.add-favorite {
-    background-color: #4CAF50; /* Yeşil */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s;
-    width: 100%;
-    margin-top: 10px;
+.card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
 }
 
+/* ==================================================
+   FAVORİ BUTONU
+================================================== */
+
+.fav-btn,
+.add-favorite {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.fav-btn:hover,
 .add-favorite:hover {
     background-color: #388e3c;
+    transform: scale(1.02);
 }
 
-/* Kitaplar için özel stil (opsiyonel) */
-.kitap .card-author {
-    font-size: 0.9rem;
-    color: #333;
-}
-/* --- KART STİLLERİ (Görsel Bölüm) --- */
-
-.card-image {
-    /* Resim, CSS Grid'de kartın üst bölümünü kaplayacak */
-    height: 200px; /* Posterler için yeterli yükseklik */
-    background-color: #f0f0f0; 
-    
-    /* JSON'dan gelen görseli yerleştirme ayarları */
-    background-size: cover;       /* Görselin kartı doldurmasını sağlar */
-    background-position: center;  /* Görseli ortalar */
-    background-repeat: no-repeat;
-    border-bottom: 1px solid #ddd;
-}
-/* style.css dosyanızdaki ilgili bölümler */
-
-/* --- LİSTE GÖRÜNÜMÜ (CSS GRID / Duyarlılık) --- */
-.media-grid {
-    display: grid; 
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+/* Favoride olan kart */
+.media-card.is-favorite {
+    border: 2px solid #4CAF50;
 }
 
-/* --- KART STİLLERİ --- */
-.media-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Görselin kart sınırlarını aşmasını engeller */
-    /* ... (Diğer stiller) */
+/* ==================================================
+   BOŞ & HATA MESAJLARI
+================================================== */
+
+.error-message {
+    color: #c62828;
+    background-color: #ffebee;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-.card-image {
-    /* Resim, CSS Grid'de kartın üst bölümünü kaplayacak */
-    height: 250px; /* Posterler için yükseklik */
-    background-color: #f0f0f0; 
-    
-    /* JSON'dan gelen görseli yerleştirme ayarları */
-    background-size: cover;       /* Görselin kartı doldurmasını sağlar */
-    background-position: center;  /* Görseli ortalar */
-    background-repeat: no-repeat;
-    border-bottom: 1px solid #ddd;
+h2 {
+    margin-bottom: 20px;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #ccc;
+}
+
+/* ==================================================
+   RESPONSIVE (MOBİL)
+================================================== */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-image {
+        height: 200px;
+    }
 }

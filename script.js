@@ -1,8 +1,19 @@
-// ===================== GLOBAL DEĞİŞKENLER =====================
+// ==================================================
+// GLOBAL STATE
+// ==================================================
 let allMedia = [];
 const contentArea = document.getElementById("content-area");
 
-// ===================== FAVORİ YÖNETİMİ =====================
+let filterState = {
+    search: "",
+    type: "Tümü",
+    year: "Tümü",
+    rating: 0
+};
+
+// ==================================================
+// FAVORİ YÖNETİMİ
+// ==================================================
 function getFavorites() {
     return JSON.parse(localStorage.getItem("favorites")) || [];
 }
@@ -11,86 +22,105 @@ function toggleFavorite(id) {
     let favorites = getFavorites();
 
     if (favorites.includes(id)) {
-        favorites = favorites.filter(favId => favId !== id);
+        favorites = favorites.filter(f => f !== id);
     } else {
         favorites.push(id);
     }
 
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    filterMedia();
+    handleRoute(); // state bozulmadan yeniden render
 }
 
-// ===================== VERİ ÇEKME (ASYNC / AWAIT + FETCH) =====================
+// ==================================================
+// VERİ ÇEKME
+// ==================================================
 async function fetchMedia() {
     try {
         const response = await fetch("./data/data-movies.json");
+        if (!response.ok) throw new Error("JSON okunamadı");
 
-        if (!response.ok) {
-            throw new Error(`HTTP Hata: ${response.status}`);
-        }
-
-        const data = await response.json();
-        allMedia = data;
+        allMedia = await response.json();
 
         populateYearFilter(allMedia);
-        displayMedia(allMedia);
         attachFilterListeners();
 
-    } catch (error) {
-        console.error("Veri çekme hatası:", error);
-        contentArea.innerHTML = `
-            <p class="error-message">
-                Medya verileri yüklenemedi. JSON dosyasını kontrol edin.
-            </p>`;
+        handleRoute(); // 🔑 ilk render
+
+    } catch (err) {
+        console.error(err);
+        contentArea.innerHTML = "<p class='error-message'>Veriler yüklenemedi</p>";
     }
 }
-// ===================== MEDYA KARTI OLUŞTURMA =====================
-function createMediaCard(item) {
-    const card = document.createElement("article");
-    card.classList.add(
-        "media-card",
-        item.type.toLowerCase().replace(/\s+/g, "-")
-    );
 
-    const favorites = getFavorites();
-    const isFavorite = favorites.includes(item.id);
+// ==================================================
+// ROUTER (SPA)
+// ==================================================
+window.addEventListener("hashchange", handleRoute);
 
-    let details = "";
+function handleRoute() {
+    const hash = window.location.hash;
 
-    if (item.type === "Kitap" && item.author) {
-        details = `<p><strong>Yazar:</strong> ${item.author}</p>`;
-    } else if (item.cast && item.cast.length > 0) {
-        details = `<p><strong>Oyuncular:</strong> ${item.cast.slice(0, 2).join(", ")}...</p>`;
+    // 🏠 TÜM MEDYALAR
+    if (!hash || hash === "#home") {
+        const filtered = applyFilters(allMedia);
+        displayMedia(filtered);
+        return;
     }
 
-    const imageUrl = item.image_url || "https://via.placeholder.com/200x300";
+    // ⭐ FAVORİLER
+    if (hash === "#favorites") {
+        const favIds = getFavorites();
+        const favItems = allMedia.filter(item => favIds.includes(item.id));
+        const filteredFavs = applyFilters(favItems);
 
-    card.innerHTML = `
-        <div class="card-image" style="background-image:url('${imageUrl}')"></div>
-        <div class="card-content">
-            <h3>${item.title} (${item.year})</h3>
-            <p><strong>Tür:</strong> ${item.type} / ${item.category}</p>
-            <p><strong>Puan:</strong> ${item.rating} ⭐</p>
-            ${details}
-            <button class="fav-btn">
-                ${isFavorite ? "🗑️ Favoriden Çıkar" : "⭐ Favorilere Ekle"}
-            </button>
-        </div>
-    `;
+        if (filteredFavs.length === 0) {
+            contentArea.innerHTML = "<h2>Sonuç bulunamadı</h2>";
+        } else {
+            displayMedia(filteredFavs);
+        }
+        return;
+    }
 
-    card.querySelector(".fav-btn").addEventListener("click", () => {
-        toggleFavorite(item.id);
+    // 🎬 DETAY
+    const [route, id] = hash.replace("#", "").split("/");
+    if (route === "detail" && id) {
+        showDetail(Number(id));
+    }
+}
+
+// ==================================================
+// FİLTRELEME
+// ==================================================
+function applyFilters(list) {
+    return list.filter(item => {
+        const matchSearch =
+            !filterState.search ||
+            item.title.toLowerCase().includes(filterState.search) ||
+            item.summary.toLowerCase().includes(filterState.search) ||
+            (item.cast && item.cast.join(" ").toLowerCase().includes(filterState.search)) ||
+            (item.author && item.author.toLowerCase().includes(filterState.search));
+
+        const matchType =
+            filterState.type === "Tümü" || item.type === filterState.type;
+
+        const matchYear =
+            filterState.year === "Tümü" || item.year.toString() === filterState.year;
+
+        const matchRating =
+            item.rating >= filterState.rating;
+
+        return matchSearch && matchType && matchYear && matchRating;
     });
-
-    return card;
 }
 
-// ===================== MEDYALARI LİSTELE =====================
+// ==================================================
+// MEDYA LİSTESİ
+// ==================================================
 function displayMedia(mediaArray) {
     contentArea.innerHTML = "";
 
     if (mediaArray.length === 0) {
-        contentArea.innerHTML = "<h2>Sonuç bulunamadı.</h2>";
+        contentArea.innerHTML = "<h2>Sonuç bulunamadı</h2>";
         return;
     }
 
@@ -99,90 +129,117 @@ function displayMedia(mediaArray) {
     contentArea.appendChild(header);
 
     const grid = document.createElement("div");
-    grid.classList.add("media-grid");
+    grid.className = "media-grid";
 
     mediaArray.forEach(item => {
-        const card = createMediaCard(item);
-        grid.appendChild(card);
+        grid.appendChild(createMediaCard(item));
     });
 
     contentArea.appendChild(grid);
 }
 
-// ===================== YIL FİLTRESİ =====================
-function populateYearFilter(mediaArray) {
-    const yearFilter = document.getElementById("year-filter");
-    const years = [...new Set(mediaArray.map(item => item.year))].sort((a, b) => b - a);
+// ==================================================
+// MEDYA KARTI
+// ==================================================
+function createMediaCard(item) {
+    const card = document.createElement("article");
+    card.className = "media-card";
 
-    yearFilter.innerHTML = `<option value="Tümü">Yıl (Tümü)</option>`;
+    const isFav = getFavorites().includes(item.id);
 
-    years.forEach(year => {
-        const option = document.createElement("option");
-        option.value = year;
-        option.textContent = year;
-        yearFilter.appendChild(option);
+    card.innerHTML = `
+        <div class="card-image">
+            <img src="${item.image_url}" alt="${item.title}">
+        </div>
+        <div class="card-content">
+            <h3>${item.title} (${item.year})</h3>
+            <p><strong>Tür:</strong> ${item.type} / ${item.category}</p>
+            <p><strong>Puan:</strong> ⭐ ${item.rating}</p>
+            <button class="fav-btn">
+                ${isFav ? "🗑️ Favoriden Çıkar" : "⭐ Favorilere Ekle"}
+            </button>
+        </div>
+    `;
+
+    card.querySelector(".fav-btn").addEventListener("click", e => {
+        e.stopPropagation();
+        toggleFavorite(item.id);
+    });
+
+    card.addEventListener("click", () => {
+        window.location.hash = `detail/${item.id}`;
+    });
+
+    return card;
+}
+
+// ==================================================
+// DETAY SAYFASI
+// ==================================================
+function showDetail(id) {
+    const item = allMedia.find(i => i.id === id);
+    if (!item) return;
+
+    contentArea.innerHTML = `
+        <div class="detail-view">
+            <button class="back-btn">← Geri</button>
+            <div class="detail-layout">
+                <img src="${item.image_url}">
+                <div class="detail-info">
+                    <h1>${item.title} (${item.year})</h1>
+                    <p><strong>Tür:</strong> ${item.type} / ${item.category}</p>
+                    <p><strong>Puan:</strong> ⭐ ${item.rating}</p>
+                    <p>${item.summary}</p>
+                    ${item.cast ? `<p><strong>Oyuncular:</strong> ${item.cast.join(", ")}</p>` : ""}
+                    ${item.author ? `<p><strong>Yazar:</strong> ${item.author}</p>` : ""}
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.querySelector(".back-btn").onclick = () => history.back();
+}
+
+// ==================================================
+// FİLTRE EVENTLERİ
+// ==================================================
+function attachFilterListeners() {
+    document.getElementById("search-input").addEventListener("input", e => {
+        filterState.search = e.target.value.toLowerCase();
+        handleRoute();
+    });
+
+    document.getElementById("media-type-filter").addEventListener("change", e => {
+        filterState.type = e.target.value;
+        handleRoute();
+    });
+
+    document.getElementById("year-filter").addEventListener("change", e => {
+        filterState.year = e.target.value;
+        handleRoute();
+    });
+
+    document.getElementById("rating-filter").addEventListener("change", e => {
+        filterState.rating = parseFloat(e.target.value);
+        handleRoute();
     });
 }
 
-// ===================== FİLTRELEME =====================
-function filterMedia() {
-    const type = document.getElementById("media-type-filter").value;
-    const year = document.getElementById("year-filter").value;
-    const rating = parseFloat(document.getElementById("rating-filter").value);
-    const search = document.getElementById("search-input").value.toLowerCase();
+// ==================================================
+// YIL FİLTRESİ
+// ==================================================
+function populateYearFilter(mediaArray) {
+    const yearFilter = document.getElementById("year-filter");
+    yearFilter.innerHTML = `<option value="Tümü">Yıl (Tümü)</option>`;
 
-    let filtered = allMedia;
-
-    if (type !== "Tümü") {
-        filtered = filtered.filter(item => item.type === type);
-    }
-
-    if (year !== "Tümü") {
-        filtered = filtered.filter(item => item.year.toString() === year);
-    }
-
-    if (rating > 0) {
-        filtered = filtered.filter(item => item.rating >= rating);
-    }
-
-    if (search) {
-        filtered = filtered.filter(item =>
-            item.title.toLowerCase().includes(search) ||
-            item.summary.toLowerCase().includes(search) ||
-            (item.cast && item.cast.join(" ").toLowerCase().includes(search)) ||
-            (item.author && item.author.toLowerCase().includes(search))
-        );
-    }
-
-    displayMedia(filtered);
+    [...new Set(mediaArray.map(i => i.year))]
+        .sort((a, b) => b - a)
+        .forEach(year => {
+            yearFilter.innerHTML += `<option value="${year}">${year}</option>`;
+        });
 }
 
-// ===================== EVENT LİSTENER =====================
-function attachFilterListeners() {
-    document.getElementById("media-type-filter").addEventListener("change", filterMedia);
-    document.getElementById("year-filter").addEventListener("change", filterMedia);
-    document.getElementById("rating-filter").addEventListener("change", filterMedia);
-    document.getElementById("search-input").addEventListener("input", filterMedia);
-}
-
-// ===================== FAVORİLER SAYFASI =====================
-document.getElementById("favorites-link").addEventListener("click", e => {
-    e.preventDefault();
-
-    const favorites = getFavorites();
-
-    if (favorites.length === 0) {
-        contentArea.innerHTML = "<h2>Henüz favori eklenmedi.</h2>";
-        return;
-    }
-
-    const favoriteItems = allMedia.filter(item =>
-        favorites.includes(Number(item.id))
-    );
-
-    displayMedia(favoriteItems);
-});
-
-
-// ===================== BAŞLAT =====================
+// ==================================================
+// BAŞLAT
+// ==================================================
 fetchMedia();

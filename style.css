@@ -130,10 +130,15 @@ main {
    MEDYA GRID (CSS GRID)
 ================================================== */
 
+.media-card {
+    max-width: 320px;   /* ⭐ kartın asla büyümemesi için */
+    width: 100%;
+}
 .media-grid {
     display: grid;
     gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-content: start;   /* ⭐ boşluklar sağda kalsın */
 }
 
 /* ==================================================
@@ -156,13 +161,17 @@ main {
 /* ==================================================
    KART GÖRSELİ
 ================================================== */
-
 .card-image {
-    height: 260px;
-    background-color: #eaeaea;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 2 / 3;   /* 🎬 klasik film posteri oranı */
+    background-color: #000;
+    overflow: hidden;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* 🔑 SİHİRLİ SATIR */
+    display: block;
 }
 
 /* ==================================================
@@ -267,4 +276,32 @@ footer {
     .card-image {
         height: 200px;
     }
+}
+.detail-view {
+    padding: 20px;
+}
+
+.detail-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.detail-layout img {
+    width: 300px;
+    border-radius: 12px;
+}
+
+.detail-info h1 {
+    margin-bottom: 15px;
+}
+
+.back-btn {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #4CAF50;
+    font-weight: 600;
 }

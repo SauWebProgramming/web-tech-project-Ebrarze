@@ -1,16 +1,16 @@
 ﻿[
-    {
-    "id": 1,
-    "type": "Film",
-    "title": "Frankenstein",
-    "year": 1931,
-    "category": "Korku/Bilim Kurgu",
-    "rating": 7.8,
-    "summary": "Bir bilim insanının ölü dokulardan hayat yaratma deneyi.",
-    "cast": ["Boris Karloff"],
-    "duration": "70 dk",
-    "image_url": "https://example.com/images/frankenstein.jpg"
-  },
+{
+  "id": 1,
+  "type": "Film",
+  "title": "Frankenstein",
+  "year": 2025,
+  "category": "Korku / Bilim Kurgu / Dram",
+  "rating": 8.1,
+  "cast": ["Oscar Isaac", "Jacob Elordi", "Mia Goth"],
+"summary": "Victor Frankenstein’ın bilimsel hırsları sonucu yarattığı varlıkla olan yüzleşmesini anlatan film, insan olmanın anlamı, yalnızlık, etik sınırlar ve yaratıcının sorumluluğu gibi temaları modern bir bakış açısıyla ele alır. Hikâye, korku unsurlarının yanı sıra güçlü bir dramatik anlatım sunar.",
+  "duration": "140 dk",
+  "image_url": "images/frankenstein.jpg"
+},
   {
     "id": 2,
     "type": "Film",
@@ -18,10 +18,10 @@
     "year": 2021,
     "category": "Bilim Kurgu/Gerilim",
     "rating": 6.5,
-    "summary": "Bir kadın kapalı bir kapsülde hayatta kalmaya çalışır.",
-    "cast": ["Mélanie Laurent"],
+    "cast": ["Mélanie Laurent", "Mathieu Amalric", "Malik Zidi"],
+"summary": "Hafızasını kaybetmiş bir kadının, ileri teknolojiye sahip kapalı bir kapsülde oksijeni tükenmeden hayatta kalmaya çalışmasını konu alır. Film, zamanla yarış, insan psikolojisi ve teknolojinin insan hayatı üzerindeki etkilerini gerilim dolu bir atmosferle işler.",
     "duration": "100 dk",
-    "image_url": "https://example.com/images/oxygen.jpg"
+    "image_url": "images/o2.jpg"
   },
   {
     "id": 3,
@@ -30,10 +30,10 @@
     "year": 2005,
     "category": "Romantik/Dram",
     "rating": 7.8,
-    "summary": "Elizabeth Bennet ve Mr. Darcy arasındaki aşk hikâyesi.",
-    "cast": ["Keira Knightley", "Matthew Macfadyen"],
+    "cast": ["Keira Knightley", "Matthew Macfadyen", "Rosamund Pike"],
+"summary": "19. yüzyıl İngiltere’sinde geçen hikâye, Elizabeth Bennet ile Mr. Darcy arasındaki ilişkiyi toplumsal sınıflar, önyargılar ve bireysel dönüşüm temaları üzerinden anlatır. Aşk, gurur ve yanlış anlamalar etrafında şekillenen klasik bir romantik dramdır.",
     "duration": "129 dk",
-    "image_url": "https://example.com/images/pride-prejudice.jpg"
+    "image_url": "images/gvö.jpg"
   },
   {
     "id": 4,
@@ -42,10 +42,10 @@
     "year": 2017,
     "category": "Korku",
     "rating": 7.3,
-    "summary": "Kasabada çocukları avlayan varlığa karşı verilen mücadele.",
-    "cast": ["Bill Skarsgård"],
+    "cast": ["Bill Skarsgård", "Jaeden Martell", "Sophia Lillis"],
+"summary": "Küçük bir kasabada ortaya çıkan doğaüstü varlığın çocukları hedef almasıyla gelişen olayları konu alır. Film, korkunun kaynağı, çocukluk travmaları ve arkadaşlık bağları üzerinden karanlık bir atmosfer sunar.",
     "duration": "135 dk",
-    "image_url": "https://example.com/images/it.jpg"
+    "image_url": "images/it.jpg"
   },
   {
     "id": 5,
@@ -54,10 +54,10 @@
     "year": 1999,
     "category": "Dram/Fantastik",
     "rating": 8.6,
-    "summary": "Doğaüstü güçlere sahip bir mahkûmun hikâyesi.",
-    "cast": ["Tom Hanks", "Michael Clarke Duncan"],
+    "cast": ["Tom Hanks", "Michael Clarke Duncan", "David Morse"],
+"summary": "Ölüm cezası mahkûmlarının bulunduğu hapishanede geçen hikâye, doğaüstü güçlere sahip bir adamın insanlara dokunan hayatını anlatır. Adalet, merhamet ve insanlık sorgulanır.",
     "duration": "189 dk",
-    "image_url": "https://example.com/images/green-mile.jpg"
+    "image_url": "images/yy.jpg"
   },
   {
     "id": 6,
@@ -66,10 +66,10 @@
     "year": 2020,
     "category": "Bilim Kurgu/Aksiyon",
     "rating": 7.3,
-    "summary": "Zamanın tersine akışıyla dünyayı kurtarma çabası.",
-    "cast": ["John David Washington", "Robert Pattinson"],
+   "cast": ["John David Washington", "Robert Pattinson", "Elizabeth Debicki"],
+"summary": "Zamanın tersine akışı kavramı üzerinden küresel bir felaketi önleme çabasını anlatır. Film, karmaşık yapısıyla kader, zaman ve özgür irade temalarını işler.",
     "duration": "150 dk",
-    "image_url": "https://example.com/images/tenet.jpg"
+    "image_url": "images/tenet.jpg"
   },
   {
     "id": 7,
@@ -78,10 +78,10 @@
     "year": 2019,
     "category": "Suç/Dram",
     "rating": 8.4,
-    "summary": "Toplumdan dışlanan bir adamın karanlık dönüşümü.",
-    "cast": ["Joaquin Phoenix"],
+    "cast": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
+"summary": "Toplumdan dışlanmış bir adamın psikolojik çöküşünü ve suç dünyasına dönüşümünü konu alır. Film, birey-toplum çatışması ve ruh sağlığı konularına odaklanır.",
     "duration": "122 dk",
-    "image_url": "https://example.com/images/joker.jpg"
+    "image_url": "images/joker.jpg"
   },
   {
     "id": 8,
@@ -90,10 +90,10 @@
     "year": 1996,
     "category": "Türk Filmi/Dram",
     "rating": 8.3,
-    "summary": "Hapisten çıkan Baran’ın İstanbul macerası.",
-    "cast": ["Şener Şen", "Uğur Yücel"],
+    "cast": ["Şener Şen", "Uğur Yücel", "Yeşim Salkım"],
+"summary": "Yıllar sonra hapisten çıkan Baran’ın İstanbul’da değişen dünyayla yüzleşmesini anlatır. Dostluk, ihanet ve geçmişle hesaplaşma temaları işlenir.",
     "duration": "121 dk",
-    "image_url": "https://example.com/images/eskiya.jpg"
+    "image_url": "images/eskiya.jpg"
   },
   {
     "id": 9,
@@ -102,10 +102,10 @@
     "year": 2004,
     "category": "Türk Filmi/Komedi/Bilim Kurgu",
     "rating": 8.0,
-    "summary": "Bir halıcının uzayda yaşadığı komik macera.",
-    "cast": ["Cem Yılmaz"],
+    "cast": ["Cem Yılmaz", "Özge Özberk", "Ozan Güven"],
+"summary": "Dünyadan kaçırılan bir halıcının uzayda yaşadığı komik ve absürt maceraları anlatır. Bilim kurgu parodisi niteliğinde eğlenceli bir yapımdır.",
     "duration": "127 dk",
-    "image_url": "https://example.com/images/gora.jpg"
+    "image_url": "images/gora.jpg"
   },
   {
     "id": 10,
@@ -114,10 +114,10 @@
     "year": 2005,
     "category": "Türk Filmi/Dram",
     "rating": 8.9,
-    "summary": "Baba-oğul arasındaki duygusal bağ.",
-    "cast": ["Çetin Tekindor"],
+    "cast": ["Çetin Tekindor", "Fikret Kuşkan", "Hümeyra"],
+"summary": "Baba-oğul ilişkisi üzerinden aile bağlarını, geçmiş travmaları ve sevginin iyileştirici gücünü anlatan duygusal bir dramdır.",
     "duration": "112 dk",
-    "image_url": "https://example.com/images/babam-oglum.jpg"
+    "image_url": "images/bvo.jpg"
   },
   {
     "id": 11,
@@ -126,10 +126,10 @@
     "year": 2018,
     "category": "Türk Filmi/Dram",
     "rating": 8.1,
-    "summary": "Genç bir yazarın içsel yolculuğu.",
-    "cast": ["Doğu Demirkol"],
+    "cast": ["Doğu Demirkol", "Murat Cemcir", "Bennu Yıldırımlar"],
+"summary": "Genç bir yazarın memleketine dönüşüyle başlayan içsel sorgulamalarını konu alır. Film, bireyin toplumla ve ailesiyle çatışmasını derin diyaloglarla işler.",
     "duration": "188 dk",
-    "image_url": "https://example.com/images/ahlat.jpg"
+    "image_url": "images/aa.jpg"
   },
   {
     "id": 12,
@@ -138,10 +138,10 @@
     "year": 1999,
     "category": "Bilim Kurgu",
     "rating": 8.7,
-    "summary": "Gerçekliğin bir simülasyon olduğu fikri.",
-    "cast": ["Keanu Reeves"],
+   "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+"summary": "Gerçekliğin bir simülasyon olduğu fikrini merkezine alan film, özgürlük, bilinç ve kader kavramlarını felsefi bir çerçevede ele alır.",
     "duration": "136 dk",
-    "image_url": "https://example.com/images/matrix.jpg"
+    "image_url": "images/matrix.jpg"
   },
   {
     "id": 13,
@@ -150,10 +150,10 @@
     "year": 2010,
     "category": "Bilim Kurgu/Gizem",
     "rating": 8.8,
-    "summary": "Rüyalar içinde rüyalarla fikir çalma sanatı.",
-    "cast": ["Leonardo DiCaprio"],
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+"summary": "Rüyalar aracılığıyla bilinçaltına fikir yerleştirme fikrini konu alır. Zaman, bilinç ve gerçeklik algısı üzerine kurulu karmaşık bir anlatı sunar.",
     "duration": "148 dk",
-    "image_url": "https://example.com/images/inception.jpg"
+    "image_url": "images/baş.jpg"
   },
   {
     "id": 14,
@@ -162,10 +162,10 @@
     "year": 1994,
     "category": "Dram",
     "rating": 8.8,
-    "summary": "Sıradan bir adamın sıra dışı hayatı.",
-    "cast": ["Tom Hanks"],
+    "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+"summary": "Sıradan bir adamın olağanüstü hayat yolculuğu üzerinden Amerikan tarihine tanıklık edilir. Saflık, sevgi ve kader temaları ön plandadır.",
     "duration": "142 dk",
-    "image_url": "https://example.com/images/forrest.jpg"
+    "image_url": "images/fg.jpg"
   },
   {
     "id": 15,
@@ -174,10 +174,10 @@
     "year": 2019,
     "category": "Gerilim/Dram",
     "rating": 8.5,
-    "summary": "İki ailenin iç içe geçen hayatları.",
-    "cast": ["Song Kang-ho"],
+    "cast": ["Song Kang-ho", "Choi Woo-shik", "Park So-dam"],
+"summary": "Farklı sosyal sınıflardan iki ailenin hayatlarının kesişmesiyle gelişen olayları anlatan film, sınıf çatışması ve toplumsal eşitsizlik eleştirisi sunar.",
     "duration": "132 dk",
-    "image_url": "https://example.com/images/parasite.jpg"
+    "image_url": "images/par.jpg"
   },
   {
     "id": 16,
@@ -186,11 +186,11 @@
     "year": 2016,
     "category": "Bilim Kurgu",
     "rating": 8.1,
-    "summary": "Kennedy suikastını önleme girişimi.",
-    "cast": ["James Franco"],
+    "cast": ["James Franco", "Sarah Gadon", "Chris Cooper"],
+"summary": "Geçmişe giderek Kennedy suikastını engellemeye çalışan bir adamın hikâyesi üzerinden zaman, kader ve ahlaki sorumluluk temaları işlenir.",
     "seasons": 1,
     "status": "Bitti",
-    "image_url": "https://example.com/images/112263.jpg"
+    "image_url": "images/11.22.63.jpg"
   },
   {
     "id": 17,
@@ -199,11 +199,11 @@
     "year": 2024,
     "category": "Bilim Kurgu",
     "rating": 7.7,
-    "summary": "İnsanlık ve uzaylı teması.",
-    "cast": ["Jess Hong"],
+    "cast": ["Jess Hong", "Liam Cunningham", "Benedict Wong"],
+"summary": "İnsanlık ve uzaylı uygarlıklar arasındaki temas üzerinden bilim, teknoloji ve varoluşsal tehditler ele alınır.",
     "seasons": 1,
     "status": "Devam Ediyor",
-    "image_url": "https://example.com/images/3body.jpg"
+    "image_url": "images/üç.jpg"
   },
   {
     "id": 18,
@@ -212,11 +212,11 @@
     "year": 2010,
     "category": "Gizem",
     "rating": 9.1,
-    "summary": "Modern dedektif hikâyeleri.",
-    "cast": ["Benedict Cumberbatch"],
+    "cast": ["Benedict Cumberbatch", "Martin Freeman", "Andrew Scott"],
+"summary": "Sherlock Holmes’un modern Londra’daki maceralarını konu alan dizi, zekâ, suç ve insan psikolojisi üzerine yoğunlaşır.",
     "seasons": 4,
     "status": "Bitti",
-    "image_url": "https://example.com/images/sherlock.jpg"
+    "image_url": "images/sherlock.jpg"
   },
   {
     "id": 19,
@@ -225,11 +225,11 @@
     "year": 2020,
     "category": "Dram",
     "rating": 8.6,
-    "summary": "Bir satranç dahisinin yükselişi.",
-    "cast": ["Anya Taylor-Joy"],
+    "cast": ["Anya Taylor-Joy", "Thomas Brodie-Sangster", "Marielle Heller"],
+"summary": "Yetim bir kızın satranç dünyasında zirveye yükselişini anlatan dizi, bağımlılık, yalnızlık, başarı baskısı ve kadınların erkek egemen alanlardaki mücadelesini işler.",
     "seasons": 1,
     "status": "Bitti",
-    "image_url": "https://example.com/images/queens.jpg"
+    "image_url": "images/tqg.jpg"
   },
   {
     "id": 20,
@@ -238,11 +238,11 @@
     "year": 2016,
     "category": "Bilim Kurgu/Korku",
     "rating": 8.7,
-    "summary": "Gizemli olaylar ve paralel evren.",
-    "cast": ["Millie Bobby Brown"],
+   "cast": ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
+"summary": "Küçük bir kasabada yaşanan gizemli olaylar ve paralel evrenle bağlantılı doğaüstü tehditler üzerinden dostluk, cesaret ve büyüme temalarını ele alan bilim kurgu dizisidir.",
     "seasons": 4,
     "status": "Devam Ediyor",
-    "image_url": "https://example.com/images/stranger.jpg"
+    "image_url": "images/st.jpg"
   },
   {
     "id": 21,
@@ -251,11 +251,11 @@
     "year": 2022,
     "category": "Korku",
     "rating": 7.5,
-    "summary": "Lisede zombi salgını.",
-    "cast": ["Park Ji-hu"],
+    "cast": ["Park Ji-hu", "Yoon Chan-young", "Cho Yi-hyun"],
+"summary": "Bir lisede başlayan zombi salgını sonrası hayatta kalmaya çalışan öğrencilerin mücadelesini anlatan dizi, korku unsurlarının yanı sıra insan doğasını ve ahlaki seçimleri de sorgular.",
     "seasons": 1,
     "status": "Devam Ediyor",
-    "image_url": "https://example.com/images/zombie.jpg"
+    "image_url": "images/aouad.jpg"
   },
   {
     "id": 22,
@@ -264,11 +264,11 @@
     "year": 2008,
     "category": "Suç/Dram",
     "rating": 9.5,
-    "summary": "Bir öğretmenin suç dünyasına girişi.",
-    "cast": ["Bryan Cranston"],
+    "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+"summary": "Bir kimya öğretmeninin suç dünyasına dönüşümünü anlatan dizi, güç, ahlak ve yozlaşma kavramlarını derinlemesine ele alır.",
     "seasons": 5,
     "status": "Bitti",
-    "image_url": "https://example.com/images/breakingbad.jpg"
+    "image_url": "images/bb.jpg"
   },
   {
     "id": 23,
@@ -277,25 +277,25 @@
     "year": 2011,
     "category": "Türk Dizisi/Komedi",
     "rating": 9.1,
-    "summary": "Absürt bir aşk hikâyesi.",
-    "cast": ["Ali Atay"],
+    "cast": ["Ali Atay", "Ahmet Mümtaz Taylan", "Serkan Keskin"],
+"summary": "Absürt mizah ve fantastik ögelerle bezeli dizi, sıradan insanların hayatları üzerinden aşk, dostluk ve hayatın anlamına dair sıra dışı bir anlatım sunar.",
     "seasons": 3,
     "status": "Bitti",
-    "image_url": "https://example.com/images/leyla.jpg"
+    "image_url": "images/lm.jpg"
   },
-  {
-    "id": 24,
-    "type": "Dizi",
-    "title": "Ezel",
-    "year": 2009,
-    "category": "Türk Dizisi/Dram",
-    "rating": 8.5,
-    "summary": "İntikam hikâyesi.",
-    "cast": ["Kenan İmirzalıoğlu"],
-    "seasons": 2,
-    "status": "Bitti",
-    "image_url": "https://example.com/images/ezel.jpg"
-  },
+ {
+  "id": 24,
+  "type": "Dizi",
+  "title": "Avlu",
+  "year": 2018,
+  "category": "Türk Dizisi/Dram",
+  "rating": 7.8,
+  "cast": ["Demet Evgar", "Ceren Moray", "Nursel Köse"],
+"summary": "Bir annenin cezaevinde verdiği hayatta kalma mücadelesini konu alan dizi, kadın dayanışması ve adalet temasını güçlü bir dille işler.",
+  "seasons": 2,
+  "status": "Bitti",
+  "image_url": "images/avlu.jpg"
+},
   {
     "id": 25,
     "type": "Dizi",
@@ -303,11 +303,11 @@
     "year": 2017,
     "category": "Türk Dizisi/Gizem",
     "rating": 8.7,
-    "summary": "Karanlık aile sırları.",
-    "cast": ["Haluk Bilginer"],
+    "cast": ["Haluk Bilginer", "Okan Yalabık", "Nur Sürer"],
+"summary": "Geçmişte işlenen bir suçun yıllar sonra ortaya çıkmasıyla gelişen olayları konu alan dizi, aile sırları, vicdan ve adalet kavramlarını karanlık bir atmosferle işler.",
     "seasons": 1,
     "status": "Bitti",
-    "image_url": "https://example.com/images/masum.jpg"
+    "image_url": "images/masum.jpg"
   },
   {
     "id": 26,
@@ -316,11 +316,11 @@
     "year": 2018,
     "category": "Türk Dizisi/Suç",
     "rating": 9.1,
-    "summary": "Adalet arayan bir adam.",
-    "cast": ["Haluk Bilginer"],
+    "cast": ["Haluk Bilginer", "Cansu Dere", "Metin Akdülger"],
+"summary": "Alzheimer teşhisi konulan bir adamın geçmişte işlenen suçlarla yüzleşmesini anlatan dizi, adalet, hafıza ve bireysel hesaplaşma temalarını güçlü bir dramatik yapıyla sunar.",
     "seasons": 2,
     "status": "Bitti",
-    "image_url": "https://example.com/images/sahsiyet.jpg"
+    "image_url": "images/sahsiyet.jpg"
   },
   {
     "id": 27,
@@ -329,11 +329,11 @@
     "year": 2017,
     "category": "Bilim Kurgu",
     "rating": 8.8,
-    "summary": "Zaman döngüsü gizemi.",
-    "cast": ["Louis Hofmann"],
+    "cast": ["Louis Hofmann", "Lisa Vicari", "Oliver Masucci"],
+"summary": "Zaman yolculuğu ve aile sırları etrafında gelişen olayları anlatan dizi, kader ve zaman döngüsü kavramlarını sorgular.",
     "seasons": 3,
     "status": "Bitti",
-    "image_url": "https://example.com/images/dark.jpg"
+    "image_url": "images/dark.jpg"
   },
   {
     "id": 28,
@@ -342,11 +342,11 @@
     "year": 1994,
     "category": "Komedi",
     "rating": 8.9,
-    "summary": "Altı arkadaşın hayatı.",
-    "cast": ["Jennifer Aniston"],
+    "cast": ["Jennifer Aniston", "Courteney Cox", "Matthew Perry"],
+"summary": "Altı yakın arkadaşın New York’taki günlük yaşamlarını konu alan dizi, dostluk, aşk ve yetişkinliğe geçiş sürecini mizahi ve sıcak bir dille anlatır.",
     "seasons": 10,
     "status": "Bitti",
-    "image_url": "https://example.com/images/friends.jpg"
+    "image_url": "images/friends.jpg"
   },
   {
     "id": 29,
@@ -355,11 +355,11 @@
     "year": 2019,
     "category": "Tarih/Dram",
     "rating": 9.4,
-    "summary": "Nükleer felaketin hikâyesi.",
-    "cast": ["Jared Harris"],
+    "cast": ["Jared Harris", "Stellan Skarsgård", "Emily Watson"],
+"summary": "1986 yılında yaşanan nükleer felaketin perde arkasını anlatan mini dizi, insan hatası, devlet politikaları ve bilimin sorumluluğu üzerine çarpıcı bir anlatım sunar.",
     "seasons": 1,
     "status": "Bitti",
-    "image_url": "https://example.com/images/chernobyl.jpg"
+    "image_url": "images/çernobil.jpg"
   },
   {
     "id": 30,
@@ -368,11 +368,11 @@
     "year": 2023,
     "category": "Post-apokaliptik",
     "rating": 9.2,
-    "summary": "Salgın sonrası hayatta kalma.",
-    "cast": ["Pedro Pascal"],
+    "cast": ["Pedro Pascal", "Bella Ramsey", "Gabriel Luna"],
+"summary": "Küresel bir salgın sonrası hayatta kalmaya çalışan insanların hikâyesini anlatan dizi, insan ilişkileri, fedakârlık ve umut temalarını post-apokaliptik bir dünyada işler.",
     "seasons": 1,
     "status": "Devam Ediyor",
-    "image_url": "https://example.com/images/lastofus.jpg"
+    "image_url": "images/tlou.jpg"
   },
   {
     "id": 31,
@@ -384,7 +384,7 @@
     "summary": "Gençlik ve ahlak üzerine karanlık bir hikâye.",
     "author": "Oscar Wilde",
     "page_count": 272,
-    "image_url": "https://example.com/images/dorian.jpg"
+    "image_url": "images/dgp.jpg"
   },
   {
     "id": 32,
@@ -393,10 +393,10 @@
     "year": 2023,
     "category": "Modern Roman",
     "rating": 8.2,
-    "summary": "Kimlik, etik ve edebiyat dünyası eleştirisi.",
+   "summary": "Kimlik, etik ve edebiyat dünyasını eleştirel bir bakışla inceleyen modern roman, günümüz yayıncılık dünyasına ayna tutar.",
     "author": "R.F. Kuang",
     "page_count": 336,
-    "image_url": "https://example.com/images/sariyuz.jpg"
+    "image_url": "images/sy.jpg"
   },
   {
     "id": 33,
@@ -405,10 +405,10 @@
     "year": 1897,
     "category": "Bilim Kurgu",
     "rating": 8.5,
-    "summary": "Bilimin kontrolden çıkışı.",
+    "summary": "Bilimin kontrolsüz gücünü ve bireyin görünmezlik üzerinden yaşadığı yabancılaşmayı anlatan klasik bir bilim kurgu eseridir.",
     "author": "H.G. Wells",
     "page_count": 192,
-    "image_url": "https://example.com/images/invisible.jpg"
+    "image_url": "images/görünmez.jpg"
   },
   {
     "id": 34,
@@ -417,10 +417,10 @@
     "year": 1942,
     "category": "Felsefi Roman",
     "rating": 8.8,
-    "summary": "Topluma yabancılaşmış bir birey.",
+    "summary": "Topluma yabancılaşmış bir bireyin varoluşsal sorgulamalarını anlatan roman, absürdizm ve felsefi düşünceyi merkeze alır.",
     "author": "Albert Camus",
     "page_count": 160,
-    "image_url": "https://example.com/images/yabanci.jpg"
+    "image_url": "images/yabancı.jpg"
   },
   {
     "id": 35,
@@ -432,7 +432,7 @@
     "summary": "İçsel yalnızlık ve aşk.",
     "author": "Sabahattin Ali",
     "page_count": 177,
-    "image_url": "https://example.com/images/kurk.jpg"
+    "image_url": "images/kmm.jpg"
   },
   {
     "id": 36,
@@ -441,59 +441,59 @@
     "year": 1971,
     "category": "Türk Modern",
     "rating": 9.5,
-    "summary": "Bireyin toplumla mücadelesi.",
+    "summary": "Bireyin toplumla mücadelesi anlatılır.",
     "author": "Oğuz Atay",
     "page_count": 724,
-    "image_url": "https://example.com/images/tutunamayanlar.jpg"
+    "image_url": "images/tutunamayanlar.jpg"
   },
+ {
+  "id": 37,
+  "type": "Kitap",
+  "title": "Cesur Yeni Dünya",
+  "year": 1932,
+  "category": "Distopya / Bilim Kurgu",
+  "rating": 8.9,
+  "summary": "Teknolojiyle kontrol edilen bir toplumda bireysellik ve özgürlük sorgulanır.",
+  "author": "Aldous Huxley",
+  "page_count": 311,
+  "image_url": "images/cyd.jpg"
+},
+ {
+  "id": 38,
+  "type": "Kitap",
+  "title": "Kuyruklu Yıldız Altında Bir İzdivaç",
+  "year": 1910,
+  "category": "Türk Klasiği / Mizah",
+  "rating": 8.0,
+  "summary": "Batıl inançlar ve toplum eleştirisini mizahi bir dille anlatan roman.",
+  "author": "Hüseyin Rahmi Gürpınar",
+  "page_count": 208,
+  "image_url": "images/kyabi.jpg"
+},
+{
+  "id": 39,
+  "type": "Kitap",
+  "title": "İnsanın Anlam Arayışı",
+  "year": 1946,
+  "category": "Psikoloji",
+  "rating": 9.3,
+  "summary": "İnsanın zorluklar karşısında hayata tutunma ve anlam bulma çabası.",
+  "author": "Viktor E. Frankl",
+  "page_count": 168,
+  "image_url": "images/iaa.jpg"
+},
   {
-    "id": 37,
-    "type": "Kitap",
-    "title": "İnce Memed",
-    "year": 1955,
-    "category": "Türk Klasiği",
-    "rating": 9.2,
-    "summary": "Zulme karşı direniş.",
-    "author": "Yaşar Kemal",
-    "page_count": 395,
-    "image_url": "https://example.com/images/incememed.jpg"
-  },
-  {
-    "id": 38,
-    "type": "Kitap",
-    "title": "1984",
-    "year": 1949,
-    "category": "Distopya",
-    "rating": 9.2,
-    "summary": "Totaliter düzen eleştirisi.",
-    "author": "George Orwell",
-    "page_count": 328,
-    "image_url": "https://example.com/images/1984.jpg"
-  },
-  {
-    "id": 39,
-    "type": "Kitap",
-    "title": "Suç ve Ceza",
-    "year": 1866,
-    "category": "Dünya Klasiği",
-    "rating": 9.5,
-    "summary": "Suç, vicdan ve kefaret.",
-    "author": "Fyodor Dostoyevski",
-    "page_count": 671,
-    "image_url": "https://example.com/images/succ.jpg"
-  },
-  {
-    "id": 40,
-    "type": "Kitap",
-    "title": "Küçük Prens",
-    "year": 1943,
-    "category": "Felsefi",
-    "rating": 9.3,
-    "summary": "Hayata dair masalsı dersler.",
-    "author": "Antoine de Saint-Exupéry",
-    "page_count": 96,
-    "image_url": "https://example.com/images/prince.jpg"
-  },
+  "id": 40,
+  "type": "Kitap",
+  "title": "Notre Dame’ın Kamburu",
+  "year": 1831,
+  "category": "Dünya Klasiği",
+  "rating": 8.7,
+  "summary": "Aşk, dışlanmışlık ve adalet temalarını işleyen dramatik bir hikâye.",
+  "author": "Victor Hugo",
+  "page_count": 528,
+  "image_url": "images/ndk.jpg"
+},
   {
     "id": 41,
     "type": "Animasyon",
@@ -503,7 +503,7 @@
     "rating": 8.6,
     "summary": "Ruhlar dünyasında geçen büyülü bir yolculuk.",
     "duration": "125 dk",
-    "image_url": "https://example.com/images/spiritedaway.jpg"
+    "image_url": "images/away.jpg"
   },
   {
     "id": 42,
@@ -514,19 +514,19 @@
     "rating": 8.4,
     "summary": "Zaman ve kaderle örülü iki hayat.",
     "duration": "106 dk",
-    "image_url": "https://example.com/images/yourname.jpg"
+    "image_url": "images/yn.jpg"
   },
-  {
-    "id": 43,
-    "type": "Animasyon",
-    "title": "Wall-E",
-    "year": 2008,
-    "category": "Bilim Kurgu",
-    "rating": 8.4,
-    "summary": "Yalnız bir robotun insanlık umudu.",
-    "duration": "98 dk",
-    "image_url": "https://example.com/images/walle.jpg"
-  },
+ {
+  "id": 43,
+  "type": "Animasyon",
+  "title": "Luck",
+  "year": 2022,
+  "category": "Fantastik / Aile",
+  "rating": 7.2,
+  "summary": "Dünyanın en şanssız kızının şans ve kaderle olan macerası.",
+  "duration": "105 dk",
+  "image_url": "images/luck.jpg"
+},
   {
     "id": 44,
     "type": "Animasyon",
@@ -536,19 +536,19 @@
     "rating": 8.2,
     "summary": "Duyguların iç dünyası.",
     "duration": "95 dk",
-    "image_url": "https://example.com/images/insideout.jpg"
+    "image_url": "images/io.jpg"
   },
   {
-    "id": 45,
-    "type": "Animasyon",
-    "title": "Coco",
-    "year": 2017,
-    "category": "Müzikal/Fantastik",
-    "rating": 8.4,
-    "summary": "Aile ve hatıralar üzerine dokunaklı bir hikâye.",
-    "duration": "105 dk",
-    "image_url": "https://example.com/images/coco.jpg"
-  },
+  "id": 45,
+  "type": "Animasyon",
+  "title": "Ölü Gelin",
+  "year": 2005,
+  "category": "Fantastik / Gotik",
+  "rating": 7.4,
+  "summary": "Yanlışlıkla ölüler diyarına bağlanan bir adamın gotik aşk hikâyesi.",
+  "duration": "77 dk",
+  "image_url": "images/olu-gelin.jpg"
+},
   {
   "id": 46,
   "type": "Dergi",
@@ -556,8 +556,8 @@
   "year": 1967,
   "category": "Bilim",
   "rating": 9.0,
-  "summary": "Bilimsel gelişmeler.",
-  "image_url": "https://example.com/images/bilim.jpg"
+ "summary": "Bilim ve teknoloji alanındaki güncel gelişmeleri akademik temellere dayalı ve anlaşılır bir dille sunan popüler bilim dergisidir.",
+  "image_url": "images/bt.jpg"
 },
 {
   "id": 47,
@@ -566,8 +566,8 @@
   "year": 2014,
   "category": "Edebiyat",
   "rating": 8.8,
-  "summary": "Edebiyat ve düşünce.",
-  "image_url": "https://example.com/images/kafka.jpg"
+  "summary": "Edebiyat, felsefe ve düşünce dünyasına odaklanan dergi, derinlikli analizler ve yazar dosyalarıyla öne çıkar.",
+  "image_url": "images/ko.jpg"
 },
 {
   "id": 48,
@@ -576,8 +576,8 @@
   "year": 2020,
   "category": "Gençlik",
   "rating": 8.2,
-  "summary": "Motivasyon ve yaşam.",
-  "image_url": "https://example.com/images/motto.jpg"
+  "summary": "Gençlere yönelik motivasyon, kişisel gelişim ve yaşam temalı içerikler sunan modern bir dergidir.",
+  "image_url": "images/gm.jpg"
 },
 {
   "id": 49,
@@ -586,17 +586,18 @@
   "year": 2010,
   "category": "Moda",
   "rating": 8.5,
-  "summary": "Moda ve stil.",
-  "image_url": "https://example.com/images/vogue.jpg"
+ "summary": "Moda, stil ve sanat dünyasındaki trendleri estetik bir bakış açısıyla ele alan prestijli bir moda dergisidir.",
+  "image_url": "images/vogue.jpg"
 },
+
 {
   "id": 50,
   "type": "Dergi",
-  "title": "Tempo",
-  "year": 1987,
-  "category": "Magazin",
-  "rating": 7.9,
-  "summary": "Ünlüler ve gündem.",
-  "image_url": "https://example.com/images/tempo.jpg"
+  "title": "Atlas",
+  "year": 1993,
+  "category": "Gezi / Kültür",
+  "rating": 8.6,
+  "summary": "Doğa, coğrafya ve kültür temalı içerikleriyle keşif ve belgesel niteliğinde yazılar sunan zengin içerikli bir dergidir.",
+  "image_url": "images/atlas.jpg"
 }
 ]

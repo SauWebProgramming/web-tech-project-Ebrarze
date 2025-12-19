@@ -305,3 +305,48 @@ footer {
     color: #4CAF50;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+  .detail-layout {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 768px) {
+  .detail-layout img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .detail-info h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin: 8px 0 12px;
+  }
+
+  .detail-info {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 768px) {
+  .detail-view {
+    padding: 12px;
+  }
+
+  .detail-layout {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  }
+}
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+}

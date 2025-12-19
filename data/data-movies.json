@@ -33,7 +33,7 @@
     "cast": ["Keira Knightley", "Matthew Macfadyen", "Rosamund Pike"],
 "summary": "19. yüzyıl İngiltere’sinde geçen hikâye, Elizabeth Bennet ile Mr. Darcy arasındaki ilişkiyi toplumsal sınıflar, önyargılar ve bireysel dönüşüm temaları üzerinden anlatır. Aşk, gurur ve yanlış anlamalar etrafında şekillenen klasik bir romantik dramdır.",
     "duration": "129 dk",
-    "image_url": "images/gvö.jpg"
+    "image_url": "images/gurur.jpg"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "cast": ["Bill Skarsgård", "Jaeden Martell", "Sophia Lillis"],
 "summary": "Küçük bir kasabada ortaya çıkan doğaüstü varlığın çocukları hedef almasıyla gelişen olayları konu alır. Film, korkunun kaynağı, çocukluk travmaları ve arkadaşlık bağları üzerinden karanlık bir atmosfer sunar.",
     "duration": "135 dk",
-    "image_url": "images/it.jpg"
+    "image_url": "images/o.jpg"
   },
   {
     "id": 5,
@@ -146,14 +146,14 @@
   {
     "id": 13,
     "type": "Film",
-    "title": "Inception",
+    "title": "Başlangıç",
     "year": 2010,
     "category": "Bilim Kurgu/Gizem",
     "rating": 8.8,
     "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
 "summary": "Rüyalar aracılığıyla bilinçaltına fikir yerleştirme fikrini konu alır. Zaman, bilinç ve gerçeklik algısı üzerine kurulu karmaşık bir anlatı sunar.",
     "duration": "148 dk",
-    "image_url": "images/baş.jpg"
+    "image_url": "images/bas.jpg"
   },
   {
     "id": 14,
@@ -203,7 +203,7 @@
 "summary": "İnsanlık ve uzaylı uygarlıklar arasındaki temas üzerinden bilim, teknoloji ve varoluşsal tehditler ele alınır.",
     "seasons": 1,
     "status": "Devam Ediyor",
-    "image_url": "images/üç.jpg"
+    "image_url": "images/üc.jpg"
   },
   {
     "id": 18,
@@ -530,7 +530,7 @@
   {
     "id": 44,
     "type": "Animasyon",
-    "title": "Inside Out",
+    "title": "Ters Yüz",
     "year": 2015,
     "category": "Aile/Duygusal",
     "rating": 8.2,

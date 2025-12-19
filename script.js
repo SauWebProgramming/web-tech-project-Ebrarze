@@ -149,7 +149,14 @@ function createMediaCard(item) {
 
     card.innerHTML = `
         <div class="card-image">
-            <img src="${item.image_url}" alt="${item.title}">
+        <img 
+  src="${item.image_url}"
+  srcset="
+    ${item.image_url} 1x,
+    ${item.image_url} 2x
+  "
+  alt="${item.title}"
+>
         </div>
         <div class="card-content">
             <h3>${item.title} (${item.year})</h3>

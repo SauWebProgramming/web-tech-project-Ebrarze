@@ -153,8 +153,8 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.media-card:hover {
-    transform: translateY(-8px);
+.media-card {
+  transform: none;
     box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }
 
